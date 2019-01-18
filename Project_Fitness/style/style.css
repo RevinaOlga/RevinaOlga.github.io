@@ -227,7 +227,7 @@ html {
       width: 78rem;
       height: 39.4rem;
       position: relative;
-      background: url("assets/image/foto1.jpg") no-repeat; }
+      background: url("../assets/image/foto1.jpg") no-repeat; }
       .about_bottom .block_image .info {
         display: flex;
         align-items: center;
@@ -258,7 +258,7 @@ html {
       .about_bottom .block_image .info.left {
         left: 2.5rem; }
     .about_bottom .image_left {
-      background: url("assets/image/foto2.jpg") no-repeat;
+      background: url("../assets/image/foto2.jpg") no-repeat;
       background-position: center; }
 
 .faq {
@@ -279,7 +279,7 @@ html {
         cursor: pointer;
         box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5); }
     .faq_wrapper .thin1 {
-      background: url("assets/image/image1.jpg") no-repeat;
+      background: url("../assets/image/image1.jpg") no-repeat;
       background-position: center; }
     .faq_wrapper .thin2 {
       background-color: #ffffff; }
@@ -322,7 +322,7 @@ html {
         margin: 0 4rem 0 4rem;
         line-height: 2; }
     .faq_wrapper .thin3 {
-      background: url("assets/image/image4.jpg") no-repeat;
+      background: url("../assets/image/image4.jpg") no-repeat;
       background-position: center; }
     .faq_wrapper .thin4 {
       background-color: #A2CA28; }
@@ -337,7 +337,7 @@ html {
         cursor: pointer;
         box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5); }
     .faq_wrapper .wide1 {
-      background: url("assets/image/image2.jpg") no-repeat;
+      background: url("../assets/image/image2.jpg") no-repeat;
       background-position: center; }
       .faq_wrapper .wide1_title {
         display: flex;
@@ -378,7 +378,7 @@ html {
         margin: 0 4rem 0 4rem;
         line-height: 2; }
     .faq_wrapper .wide3 {
-      background: url("assets/image/image3.jpg") no-repeat;
+      background: url("../assets/image/image3.jpg") no-repeat;
       background-position: center; }
     .faq_wrapper .wide4 {
       background-color: #ffffff;
@@ -390,7 +390,7 @@ html {
 .services {
   max-width: 160rem;
   min-height: 80rem;
-  background: url("assets/image/bg_footer.jpg") no-repeat;
+  background: url("../assets/image/bg_footer.jpg") no-repeat;
   background-position: center;
   padding-top: 23rem;
   box-sizing: border-box; }
