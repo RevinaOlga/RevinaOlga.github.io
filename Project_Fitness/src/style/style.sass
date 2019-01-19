@@ -1,0 +1,52 @@
+$colorDark: #000000
+$colorLight: #ffffff
+$colorActiveG: #A2CA28
+$colorActiveO: #FD634E
+$colorLightText: #83969F
+$colorDarkText: #656E74
+$bgDark: #0D1119
+$colorFace: #2E3192
+$colorTw: #00AEEF
+$colorYou: #ED3123
+$colorIn: #171A8F
+
+html
+    font-size: 10px
+
+.main_align
+    max-width: 160rem
+    margin: 0 auto
+
+@mixin borderBox
+    box-sizing: border-box
+
+@mixin fontText($size, $transform, $color, $weight)
+    text-transform: $transform
+    font-size: $size
+    text-decoration: none
+    color: $color
+    line-height: 1.5
+    font-weight: $weight
+    font-family: 'Open Sans', sans-serif
+
+@mixin fontTitle($color)
+    text-transform: uppercase
+    font-size: 1.4rem
+    text-decoration: none
+    color: $color
+    font-family: 'Montserrat', sans-serif
+
+@mixin alignCenter
+    display: flex
+    justify-content: center
+    align-items: center
+
+@import './_main.sass'
+
+@import './_about.sass'
+
+@import './_faq.sass'
+
+@import './_services.sass'
+
+@import './_footer.sass'

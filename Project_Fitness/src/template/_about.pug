@@ -1,0 +1,39 @@
+.about
+    .about_top(id="services")
+        each item in aboutBlock
+            .about_top-item
+                .item_icon
+                    img(src="assets/image/icon" + item.id + ".png")
+                .item_title= item.title
+                .item_content= item.content
+                a.item_link(href="#")= item.link
+    .about_bottom(id="about")
+        .block_text
+            .block_text-title it’s all about
+            .block_text-name fitness first
+            .block_text-icon
+                img(src="assets/image/small_drop.png")
+            .block_text-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+            a.block_text-link(href="#") Read More
+        .block_image
+            .info
+                a.info_use(href="#") Active Users 
+                    span (34)
+                .info_icon
+                    img(src="assets/image/drop_active.png")
+        .block_image.image_left
+            .info.left
+                a.info_use(href="#") Products Used 
+                    span (658)
+                .info_icon
+                    img(src="assets/image/drop_active.png")
+        .block_text
+            .block_text-title love your
+            .block_text-name your body
+            .block_text-icon
+                img(src="assets/image/small_drop.png")
+            .block_text-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+            a.block_text-link(href="#") Read More
+
+
+

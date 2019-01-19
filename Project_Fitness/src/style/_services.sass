@@ -1,0 +1,21 @@
+.services
+    max-width: 160rem
+    min-height: 80rem
+    background: url('../assets/image/bg_footer.jpg') no-repeat
+    background-position: center
+    padding-top: 23rem
+    @include borderBox
+    &_wrapper
+        @include alignCenter
+        flex-direction: column
+        & .services_title
+            @include fontText(4.5rem, none, $colorLight, 400)
+            margin-bottom: 2rem
+            text-align: center
+            margin-left: 2rem
+            margin-right: 2rem
+        & .services_content
+            @include fontText(1.6rem, none, $colorLight, 400)
+            max-width: 50rem
+            text-align: center
+            margin: 0 2rem

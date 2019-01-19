@@ -1,0 +1,24 @@
+@import './_header.sass'
+.main
+    max-width: 160rem
+    min-height: 89rem
+    background: url('../assets/image/bg_main.jpg') no-repeat
+    background-position: center
+    position: relative
+    &_title
+        position: absolute
+        top: 65rem
+        left: 10rem
+        @media screen and (max-width: 400px)
+            left: 1rem
+        & h1 
+            @include fontText(4rem, uppercase, $colorLight, 400)
+            & span.green
+                color: $colorActiveG
+        & h2
+            @include fontText(1.5rem, uppercase, $colorLight, 700)
+            letter-spacing: 3px
+            margin-left: 16rem
+
+            & span.orange
+                color: $colorActiveO

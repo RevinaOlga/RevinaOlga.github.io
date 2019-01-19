@@ -1,0 +1,97 @@
+.faq
+    background-color: $colorActiveO
+    max-width: 160rem
+    &_wrapper
+        max-width: 118rem
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        & .faq_thin
+            width: 40rem
+            min-height: 33rem
+            box-shadow: none
+            transition-duration: .3s
+            &:hover
+                cursor: pointer
+                box-shadow: 0 0 6rem rgba(0,0,0,0.5)
+        & .thin1
+            background: url("../assets/image/image1.jpg") no-repeat
+            background-position: center
+        & .thin2
+            background-color: $colorLight
+            &_header
+                display: flex
+                justify-content: space-between
+                align-items: start
+                flex-wrap: wrap
+                margin: 5rem 3rem 3rem 4rem
+                & .thin2_wrapper
+                    display: flex
+                    flex-direction: column
+                    margin-right: 1rem
+                    & .thin2_name
+                        @include fontTitle($colorActiveO)
+                    & .white
+                        color: $colorLight
+                    & .thin2_title
+                        @include fontText(3.5rem, uppercase, $colorActiveG, 300)
+                    & .white
+                        color: $colorLight
+
+            &_content
+                @include fontText(1.4rem, none, $colorDarkText, 400)
+                margin: 0 4rem 0 4rem
+                line-height: 2
+
+        & .thin3
+            background: url("../assets/image/image4.jpg") no-repeat
+            background-position: center
+        & .thin4
+            background-color: $colorActiveG
+            & .white
+                color: $colorLight
+        & .faq_wide
+            width: 78rem
+            min-height: 33rem
+            box-shadow: none
+            transition-duration: .3s
+            &:hover
+                cursor: pointer
+                box-shadow: 0 0 6rem rgba(0,0,0,0.5)
+        & .wide1
+            background: url("../assets/image/image2.jpg") no-repeat
+            background-position: center
+            &_title
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                align-items: center
+                margin: 5rem
+                @include fontTitle($colorLight)
+                letter-spacing: 2px
+                & .title_right
+                    display: flex
+                    align-items: center
+                    & .text
+                        margin-right: 1rem
+        & .wide2
+            background-color: $colorActiveG
+            &_title
+                @include fontText(3.5rem, uppercase, $colorLight, 300)
+                margin: 4rem 4rem 2rem
+            &_content
+                @include fontText(1.4rem, none, $colorLight, 400)
+                margin: 0 4rem 0 4rem
+                line-height: 2
+        & .wide3
+            background: url("../assets/image/image3.jpg") no-repeat
+            background-position: center
+        & .wide4
+            background-color: $colorLight
+            padding-bottom: 3rem
+            @include borderBox
+            & .thin2_header.nowrap
+                -ms-flex-wrap: nowrap
+                flex-wrap: nowrap
+

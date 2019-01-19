@@ -1,0 +1,65 @@
+.header
+    padding: 4rem 5rem
+    @include borderBox
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    @media screen and (max-width: 900px)
+        flex-direction: column
+        align-items: start
+    &_logo
+        text-decoration: none
+        display: flex
+        & .logo_wrapper
+            display: flex
+            flex-direction: column
+            margin-left: 1rem
+            & .logo_name
+                @include fontText(2.2rem, uppercase, $colorLight, 700)
+                letter-spacing: 3px
+            & .logo_line
+                width: 4.2rem
+                height: 0.3rem
+                background-color: $colorActiveG
+    &_button
+        @media screen and (max-width: 900px)
+            display: flex
+            flex-direction: column
+            position: absolute
+            right: 4rem
+            &:hover
+                cursor: pointer
+            & span
+                display: inline-block
+                width: 3rem
+                height: 0.3rem
+                margin: 0.4rem 0
+                background-color: $colorLight
+    &_nav
+        @media screen and (max-width: 900px)
+            height: 0
+            overflow: hidden
+            opacity: 0
+            transition-duration: .8s
+        &__current
+            height: auto
+            opacity: 1
+        & ul
+            display: flex
+            @media screen and (max-width: 900px)
+                flex-direction: column
+                align-items: start
+                margin-top: 2rem
+            & li
+                margin-left: 5rem
+                margin-right: 1rem
+                list-style-type: none
+                @media screen and (max-width: 900px)
+                    margin: 1.5rem 4rem 
+                & a
+                    @include fontText(1.2rem, uppercase, $colorLight, 700)
+                    letter-spacing: 1px
+                    transition-duration: .3s
+                    &:hover
+                        color: $colorLightText

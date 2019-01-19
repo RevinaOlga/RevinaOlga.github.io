@@ -1,0 +1,91 @@
+.about
+    background-color: $colorActiveG
+    max-width: 160rem
+    padding: 5rem 0 0
+    @include borderBox
+    &_top
+        max-width: 120rem
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        margin: 0 auto 10rem
+        &-item
+            margin: 0 2rem
+            width: 26rem
+            & .item_icon
+                margin-bottom: 1rem
+                margin-top: 5rem
+            & .item_title
+                @include fontText(2.4rem, none, $colorLight, 400)
+                margin: 1rem 0 1rem
+            & .item_content
+                @include fontText(1.4rem, none, $colorLight, 300)
+                line-height: 2
+                margin: 2rem 0 1rem 0
+            & .item_link
+                display: inline-block
+                @include fontText(1.4rem, none, $colorLight, 300)
+                margin-top: 2rem
+                transition-duration: .3s
+                &:hover
+                    color: $colorLightText
+    &_bottom
+        max-width: 120rem
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        margin: 0 auto
+        & .block_text
+            width: 40rem
+            min-height: 39.4rem
+            background-color: $colorLight
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+            &-title
+                @include fontTitle($colorActiveO)
+                margin: 5rem 0 0
+            &-name
+                @include fontText(3.5rem, uppercase, $colorActiveG, 300)
+            &-icon
+                margin: 2rem 0
+            &-content
+                @include fontText(1.4rem, none, $colorDarkText, 400)
+                line-height: 2
+                text-align: center
+                margin: 0 4rem 1rem
+            &-link
+                display: inline-block
+                @include fontText(1.4rem, none, $colorActiveG, 400)
+                border-bottom: 1px solid $colorActiveG
+                line-height: 0.9
+                transition-duration: .3s
+                &:hover
+                    border-bottom: none
+        & .block_image
+            width: 78rem
+            height: 39.4rem
+            position: relative
+            background: url("../assets/image/foto1.jpg") no-repeat
+            & .info
+                display: flex
+                align-items: center
+                position: absolute
+                bottom: 5rem
+                right: 2.5rem
+                &_use
+                    @include fontText(1.2rem, none, $colorLight, 400)
+                    transition-duration: .3s
+                    & span
+                        @include fontText(1.2rem, none, $colorLight, 400)
+                    &:hover
+                        color: $colorActiveO
+                &_icon
+                    margin-left: 1rem
+            & .info.left
+                left: 2.5rem
+        & .image_left
+            background: url("../assets/image/foto2.jpg") no-repeat
+            background-position: center
+

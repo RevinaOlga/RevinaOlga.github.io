@@ -1,0 +1,117 @@
+.footer
+    max-width: 160rem
+    background-color: $bgDark
+    padding: 5rem 2rem 6rem 2rem
+    @include borderBox
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    &_left
+        display: flex
+        flex-direction: column
+        width: 40rem
+        @media screen and (max-width: 1240px)
+            justify-content: flex-start
+        @media screen and (max-width: 850px)
+            width: auto
+            justify-content: flex-start
+        & .footer-title
+            @include fontText(1.4rem, none, $colorLight, 400)
+            margin: 2rem 3rem 2rem 2rem
+        & .footer-content
+            @include fontText(1.4rem, none, $colorLightText, 400)
+            line-height: 1.7
+            margin: 0 3rem 0 2rem
+    &_right
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        @media screen and (max-width: 850px)
+            width: 100%
+        &-top
+            display: flex
+            flex-wrap: wrap
+            & .right_justify
+                display: flex
+                flex-direction: column
+                width: 50rem
+                @media screen and (max-width: 850px)
+                    justify-content: flex-start
+                    width: auto
+                & .footer-title
+                    @include fontText(1.4rem, none, $colorLight, 400)
+                    margin: 2rem 10rem 2rem 2rem
+                & .footer-content
+                    @include fontText(1.4rem, none, $colorLightText, 400)
+                    line-height: 1.7
+                    margin: 0 1rem 0 2rem
+            & .footer_icons
+                display: flex
+                flex-direction: column
+                margin: 2rem 1rem 0 2rem
+                &-title
+                     @include fontText(1.4rem, none, $colorLight, 400)
+                &-content
+                    display: flex
+                    & .icon
+                        width: 5.2rem
+                        height: 5.2rem
+                        border-radius: 50%
+                        @include alignCenter
+                        margin: 2rem 0.6rem
+                        text-decoration: none
+                        & i
+                            color: $colorLight
+                            font-size: 2rem
+                    & .facebook
+                        background-color: $colorFace
+                    & .twitter
+                        background-color: $colorTw
+                    & .youtube
+                        background-color: $colorYou
+                    & .invision
+                        background-color: $colorIn
+        &-bottom
+            display: flex
+            flex-wrap: wrap
+            justify-content: flex-start
+            margin: 5.5rem 1rem 0 2rem
+            & input.name
+                margin-right: 0.6rem
+                padding-left: 2.5rem
+                @include borderBox
+                width: 20rem
+                height: 5rem
+                border-radius: 0.5rem
+                    
+                @include fontText(1.4rem, none, $colorDarkText, 400)
+                &:focus
+                    color: $colorDark
+                    outline: none
+            & input.email
+                margin-right: 0.6rem
+                padding-left: 2.5rem
+                @include borderBox
+                width: 34rem
+                height: 5rem
+                border-radius: 0.5rem
+                @media screen and (max-width: 638px)
+                    margin-top: 2rem
+                @include fontText(1.4rem, none, $colorDarkText, 400)
+                &:focus
+                    color: $colorDark
+                    outline: none
+            & .button
+                margin-right: 0.6rem
+                width: 20rem
+                height: 5rem
+                background-color: $colorActiveG
+                border-radius: 0.5rem
+                @media screen and (max-width: 844px)
+                    margin-top: 2rem
+                @include alignCenter
+                @include fontText(1.4rem, none, $colorLight, 400)
+                &:hover
+                    cursor: pointer
+
