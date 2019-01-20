@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lemon</title>
+    <link href="libs/datepicker/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="libs/reset-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="libs/scrollbar/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400, 400i,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="main_bg">
+      <div class="main_aling">
+        <div class="header"><a class="header_logo" href="/"><img src="assets/image/logo-header.png"></a>
+          <div class="header_button"><span></span><span></span><span></span><span></span></div>
+          <ul class="header_menu">
+            <li><a href="/">home</a></li>
+            <li class="header_menu-dropdown">recipes
+              <ul class="dropdown_item">
+                <li><a href="#easy">recommended</a></li>
+                <li><a href="#popular">popular</a></li>
+                <li><a href="#easy">quick & easy</a></li>
+                <li><a href="#healthy">healthy</a></li>
+                <li><a href="#newest">newest</a></li>
+              </ul>
+            </li>
+            <li><a href="#gallery">photo galleries</a></li>
+            <li><a href="#error">videos</a></li>
+            <li><a href="#recipe">all categories</a></li>
+          </ul>
+          <div class="header_search"><span class="icon"><i class="fas fa-search"></i></span>
+            <input type="text" placeholder="find a recipe">
+          </div>
+        </div>
+        <div class="mainslider" id="newest">
+          <div class="slider slide1">
+            <div class="slide_logo"><img src="assets/image/logo-slider.png"></div>
+            <div class="slider_title">Bananas Forest Ice Cream Cake</div>
+            <div class="slider_content">If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly, this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</div><a class="slider_button" href="#">get it recipe</a>
+          </div>
+          <div class="slider slide2">
+            <div class="slide_logo"><img src="assets/image/logo-slider.png"></div>
+            <div class="slider_title">Giant Ice Cream Sandwic</div>
+            <div class="slider_content">Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating – sharing is what you do best. And thanks to the 20 million of you who come here each month, we now have 500,000.</div><a class="slider_button" href="#">get it recipe</a>
+          </div>
+          <div class="slider slide3">
+            <div class="slide_logo"><img src="assets/image/logo-slider.png"></div>
+            <div class="slider_title">Dark Chocolate Crunch Sandwich Cake</div>
+            <div class="slider_content">ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to form an even layer. Spread with half of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream.</div><a class="slider_button" href="#">get it recipe</a>
+          </div>
+          <div class="slider slide4">
+            <div class="slide_logo"><img src="assets/image/logo-slider.png"></div>
+            <div class="slider_title">Vanilla Frozen Coffee</div>
+            <div class="slider_content">TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div><a class="slider_button" href="#">get it recipe</a>
+          </div>
+          <div class="slider slide5">
+            <div class="slide_logo"><img src="assets/image/logo-slider.png"></div>
+            <div class="slider_title">Mix Coffee And Creamer</div>
+            <div class="slider_content">We also have tons crazy-tempting photos, troves of recipe reviews and more than 2 million Facebook likes. That’s a heck of a lot of Food. Foster hasn't always been served on top of ice cream cake.</div><a class="slider_button" href="#">get it recipe</a>
+          </div>
+          <div class="slider-dots">
+            <div class="slider-dot" name="dots">
+              <input type="radio" name="dots" id="check1" checked="checked">
+              <label for="check1"></label>
+            </div>
+            <div class="slider-dot" name="dots">
+              <input type="radio" name="dots" id="check2">
+              <label for="check2"></label>
+            </div>
+            <div class="slider-dot" name="dots">
+              <input type="radio" name="dots" id="check3">
+              <label for="check3"></label>
+            </div>
+            <div class="slider-dot" name="dots">
+              <input type="radio" name="dots" id="check4">
+              <label for="check4"></label>
+            </div>
+            <div class="slider-dot" name="dots">
+              <input type="radio" name="dots" id="check5">
+              <label for="check5"></label>
+            </div>
+          </div>
+        </div>
+        <div class="gallery" id="gallery">
+          <div class="gallery_item">
+            <div class="gallery_item-foto"><img src="assets/image/gallery/1.jpg"></div><a class="gallery_item-title" href="#">Raspberry &amp; Cream Frozen Yogurt Pie</a>
+                    <div class="gallery_item-meta"> <i class="far fa-clock">&nbsp;</i>
+                      <div class="time">35mins &nbsp;</div>
+                      <div class="line">| &nbsp;</div><i class="far fa-comment">&nbsp;</i>
+                      <div class="comment">7&nbsp;</div><i class="far fa-eye">&nbsp;</i>
+                      <div class="view">14</div>
+                    </div>
+          </div>
+          <div class="gallery_item">
+            <div class="gallery_item-foto"><img src="assets/image/gallery/2.jpg"></div><a class="gallery_item-title" href="#">Giant Ice Cream Sandwich</a>
+                    <div class="gallery_item-meta"> <i class="far fa-clock">&nbsp;</i>
+                      <div class="time">20mins &nbsp;</div>
+                      <div class="line">| &nbsp;</div><i class="far fa-comment">&nbsp;</i>
+                      <div class="comment">4&nbsp;</div><i class="far fa-eye">&nbsp;</i>
+                      <div class="view">356</div>
+                    </div>
+          </div>
+          <div class="gallery_item">
+            <div class="gallery_item-foto"><img src="assets/image/gallery/3.jpg"></div><a class="gallery_item-title" href="#">Dark Chocolate Crunch Ice Cream Sandwich Cake</a>
+                    <div class="gallery_item-meta"> <i class="far fa-clock">&nbsp;</i>
+                      <div class="time">15mins &nbsp;</div>
+                      <div class="line">| &nbsp;</div><i class="far fa-comment">&nbsp;</i>
+                      <div class="comment">4&nbsp;</div><i class="far fa-eye">&nbsp;</i>
+                      <div class="view">167</div>
+                    </div>
+          </div>
+        </div>
+        <div class="recipe" id="easy">
+          <div class="recipe_foto"><a class="foto-label" href="#"><i class="far fa-file-image"></i></a></div>
+          <div class="recipe_item">
+            <div class="recipe_item-title">Bananas Foster Ice Cream Cake</div>
+            <div class="recipe_item-metaButton">
+              <div class="item-meta"> <i class="far fa-clock">&nbsp;</i>
+                <div class="time">15mins &nbsp;</div>
+                <div class="indicator">
+                  <div class="line line_1"></div>
+                  <div class="line line_2"></div>
+                  <div class="line line_3"></div>
+                  <div class="line line_4"></div>
+                </div>
+                <div class="easy"> &nbsp; Easy</div>
+              </div>
+              <div class="item-button">save repice</div>
+            </div>
+            <div class="recipe_item-contents content demo-y">
+              <div class="ingredients"><span>1 (8 ounce) container frozen whipped topping, thawed</span><span>20 chocolate round wafers, divided</span><span>1 (7 1/4 ounce) bottle Smucker's® Hot Dark Chocolate Microwaveable Topping, divided</span></div>
+              <div class="caption">Directions</div>
+              <div class="content2">ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to form an even layer. Spread with half of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream. Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers. TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers. TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers. TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping. Freeze 3 hours or overnight. </div>
+            </div>
+          </div>
+        </div>
+        <div class="err_auth">
+          <div class="error" id="error">
+            <div class="error_title">404</div>
+            <div class="error_wrap">
+              <div class="error_line"></div>
+              <div class="error_content">
+                <div class="item_lettering-title">Sorry</div>
+                <div class="item_lettering-content">
+                   we couldn't </div>
+                <div class="item_lettering-content">
+                   find the page</div>
+                <div class="item_lettering-smile"> <span>:</span><span class="thin">(</span></div>
+              </div>
+              <div class="error_button">back</div>
+            </div>
+          </div>
+          <div class="author">
+            <div class="author_title">Author</div>
+            <div class="author_line"></div>
+            <div class="author_wrap">
+              <div class="author_foto"></div>
+              <div class="author_info">
+                <div class="info-name">Karen Gray</div>
+                <div class="info-country">United States</div>
+                <div class="info-network"><a class="i fab fa-google-plus-g" href="#"></a><a class="i fab fa-twitter" href="#"></a><a class="i fab fa-facebook-f" href="#"></a><a class="i fab fa-pinterest" href="#"></a></div>
+                <div class="author_line"></div>
+                <div class="info-title">About Lemon</div>
+                <div class="info-content">Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating – sharing is what you do best. And thanks to the 20 million of you who come here each month, we now have 500,000 recipes to show for it, more than anywhere else in the digital universe. We also have tons crazy-tempting photos, troves of recipe reviews and more than 2 million Facebook likes. That’s a heck of a lot of Food. Thank you!</div>
+                <div class="info-lettering"><img src="assets/image/autor/lettering.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="smallBlocks">
+          <div class="smallBlocks_left">
+            <div class="smallSlider" id="healthy">
+              <div class="smallSlider_title">Chi-Chi or Chichi</div>
+              <div class="smallSlider_line"></div>
+              <div class="smallSlider_content">
+                <div class="smallSlider_content-info">
+                  <div class="foto"></div>
+                  <div class="info">
+                    <div class="info_recipe">Recipe by</div>
+                    <div class="info_name">Smuckersreg Toppings</div>
+                                <div class="gallery_item-meta"> <i class="far fa-clock">&nbsp;</i>
+                                  <div class="time">15mins &nbsp;</div>
+                                  <div class="line">| &nbsp;</div><i class="far fa-comment">&nbsp;</i>
+                                  <div class="comment">12&nbsp;</div><i class="far fa-eye">&nbsp;</i>
+                                  <div class="view">37</div>
+                                </div>
+                  </div>
+                </div>
+                <div class="smallSlider_content-image smallslide1"></div>
+                <div class="smallSlider_content-image smallslide2"></div>
+                <div class="smallSlider_content-image smallslide3"></div>
+                <div class="smallSlider_content-image smallslide4"></div>
+                <div class="smallSlider_content-image smallslide5"></div>
+                <div class="smallSlider-dots">
+                  <div class="smallslider-dot" name="dot">
+                    <input type="radio" name="dot" id="smallcheck1" checked="chacked">
+                    <label for="smallcheck1"></label>
+                  </div>
+                  <div class="smallslider-dot" name="dot">
+                    <input type="radio" name="dot" id="smallcheck2">
+                    <label for="smallcheck2"></label>
+                  </div>
+                  <div class="smallslider-dot" name="dot">
+                    <input type="radio" name="dot" id="smallcheck3">
+                    <label for="smallcheck3"></label>
+                  </div>
+                  <div class="smallslider-dot" name="dot">
+                    <input type="radio" name="dot" id="smallcheck4">
+                    <label for="smallcheck4"></label>
+                  </div>
+                  <div class="smallslider-dot" name="dot">
+                    <input type="radio" name="dot" id="smallcheck5">
+                    <label for="smallcheck5"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="target">
+              <div class="target_title"> 
+                <div class="target_title-name">Target</div>
+                <div class="target_title-icons"> <a class="i fas fa-print" href="#"></a><a class="i far fa-envelope" href="#"></a><a class="i fab fa-facebook-f" href="#"></a><a class="i fab fa-pinterest" href="#"></a>
+                </div>
+              </div>
+              <div class="target_line"></div>
+              <div class="target_content">
+                <div class="target_content-name">Presentation line</div>
+                <div class="target_content-item">
+                  <div class="item_circle">
+                    <div class="circle1">
+                      <div class="digit">19%</div>
+                    </div>
+                  </div>
+                  <div class="item_wrap">
+                    <div class="item_name">Housewives</div>
+                    <div class="item_content">Lorem ipsum dolor sit amet, prima ceteros</div>
+                  </div>
+                </div>
+                <div class="target_content-item">
+                  <div class="item_circle">
+                    <div class="circle2">
+                      <div class="digit">65%</div>
+                    </div>
+                  </div>
+                  <div class="item_wrap">
+                    <div class="item_name">Hewlyweds</div>
+                    <div class="item_content">Has brute elitr deserunt ea, assentior eloquentiam neglegentur te sed.</div>
+                  </div>
+                </div>
+                <div class="target_content-item">
+                  <div class="item_circle">
+                    <div class="circle3">
+                      <div class="digit">50%</div>
+                    </div>
+                  </div>
+                  <div class="item_wrap">
+                    <div class="item_name">Business lady</div>
+                    <div class="item_content">Ei nam primis putent signiferumque.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="smallBlocks_middle">
+            <div class="recipesmall" id="recipe">
+              <div class="recipesmall_title">
+                <div class="recipesmall_title-name">Recipe</div>
+                <div class="recipesmall_title-icons"> <a class="i fas fa-print" href="#"></a><a class="i far fa-envelope" href="#"></a><a class="i fab fa-facebook-f" href="#"></a><a class="i fab fa-pinterest" href="#"></a>
+                </div>
+              </div>
+              <div class="recipesmall_line"></div>
+              <div class="recipesmall_content">
+                <div class="recipesmall_content-names">
+                  <div class="name easy">Easy</div>
+                  <div class="name middle">Middle</div>
+                  <div class="name long">Long</div>
+                </div>
+                <div class="recipesmall_content-items recipesmall_content-items__current">
+                  <div class="recipesmall_content-item easy_item">
+                    <div class="item_image"><img src="assets/image/recipesmall/1.jpg"></div>
+                    <div class="item_wrap">
+                      <div class="username">by <span class="by">Smuckersreg Toppings</span></div>
+                      <div class="text">Thanks for the recipe lorem ipsum bla bla bla Thanks for the recipe lore</div>
+                    </div>
+                  </div>
+                  <div class="recipesmall_content-item easy_item">
+                    <div class="item_image"><img src="assets/image/recipesmall/2.jpg"></div>
+                    <div class="item_wrap">
+                      <div class="username">by <span class="by">Smuckersreg Toppings</span></div>
+                      <div class="text">Thanks for the recipe lorem nks for the recipe</div>
+                    </div>
+                  </div>
+                  <div class="recipesmall_content-item easy_item">
+                    <div class="item_image"><img src="assets/image/recipesmall/3.jpg"></div>
+                    <div class="item_wrap">
+                      <div class="username">by <span class="by">Smuckersreg Toppings </span></div>
+                      <div class="text">Thanks for the recipe lorem nks for the recipe</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipesmall_content-items">
+                  <div class="recipesmall_content-item middle_item">
+                    <div class="item_image"><img src="assets/image/recipesmall/3.jpg"></div>
+                    <div class="item_wrap">
+                      <div class="username">by <span class="by">Smuckersreg Toppings</span></div>
+                      <div class="text">Thanks for the recipe lorem nks for the recipe</div>
+                    </div>
+                  </div>
+                  <div class="recipesmall_content-item middle_item">
+                    <div class="item_image"><img src="assets/image/recipesmall/1.jpg"></div>
+                    <div class="item_wrap">
+                      <div class="username">by <span class="by">Smuckersreg Toppings</span></div>
+                      <div class="text">Thanks for the recipe lorem ipsum bla bla bla Thanks for the recipe lore</div>
+                    </div>
+                  </div>
+                  <div class="recipesmall_content-item middle_item">
+                    <div class="item_image"><img src="assets/image/recipesmall/2.jpg"></div>
+                    <div class="item_wrap">
+                      <div class="username">by <span class="by">Smuckersreg Toppings </span></div>
+                      <div class="text">Thanks for the recipe lorem nks for the recipe</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipesmall_content-items">
+                  <div class="recipesmall_content-item long_item">
+                    <div class="item_image"><img src="assets/image/recipesmall/2.jpg"></div>
+                    <div class="item_wrap">
+                      <div class="username">by <span class="by">Smuckersreg Toppings</span></div>
+                      <div class="text">Thanks for the recipe lorem nks for the recipe</div>
+                    </div>
+                  </div>
+                  <div class="recipesmall_content-item long_item">
+                    <div class="item_image"><img src="assets/image/recipesmall/3.jpg"></div>
+                    <div class="item_wrap">
+                      <div class="username">by <span class="by">Smuckersreg Toppings</span></div>
+                      <div class="text">Thanks for the recipe lorem nks for the recipe</div>
+                    </div>
+                  </div>
+                  <div class="recipesmall_content-item long_item">
+                    <div class="item_image"><img src="assets/image/recipesmall/1.jpg"></div>
+                    <div class="item_wrap">
+                      <div class="username">by <span class="by">Smuckersreg Toppings </span></div>
+                      <div class="text">Thanks for the recipe lorem ipsum bla bla bla Thanks for the recipe lore</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recipesmall_button-wrap">
+                <div class="button">view more</div>
+              </div>
+            </div>
+            <div class="tags">
+              <div class="tags_title"> 
+                <div class="tags_title-name">Tags</div>
+              </div>
+              <div class="tags_line"></div>
+              <div class="tags_content"><a class="tag" href="#">#yummy</a><a class="tag" href="#">#sweet</a><a class="tag" href="#">#dinner</a><a class="tag" href="#">#lunch</a><a class="tag" href="#">#breakfast</a><a class="tag" href="#">#fresh</a><a class="tag" href="#">#tasty</a><a class="tag" href="#">#delish</a><a class="tag" href="#">#delicious</a><a class="tag" href="#">#eating</a><a class="tag" href="#">#food</a></div>
+            </div>
+            <div class="calendar">
+              <div class="calendar_title"> 
+                <div class="calendar_title-name">Calendar</div>
+              </div>
+              <div class="calendar_line"></div>
+              <div class="calendar_content">
+                <div class="datepicker-here" data-language="en"></div>
+              </div>
+            </div>
+          </div>
+          <div class="smallBlocks_right">
+            <div class="popular" id="popular">
+              <div class="popular_name">Popular Now</div>
+              <div class="popular_title">Vanilla Frozen Coffee</div>
+              <div class="popular_content">Mix coffee, sugar and creamer. Pour into blender and add ice cubes. Blend until smooth.</div>
+              <div class="popular_block-meta">
+                <div class="meta_button">get it recipe</div>
+                            <div class="gallery_item-meta"> <i class="far fa-clock">&nbsp;</i>
+                              <div class="time">6mins &nbsp;</div>
+                              <div class="line">| &nbsp;</div><i class="far fa-comment">&nbsp;</i>
+                              <div class="comment">240&nbsp;</div><i class="far fa-eye">&nbsp;</i>
+                              <div class="view">400</div>
+                            </div>
+              </div>
+              <div class="popular_image"></div>
+            </div>
+            <div class="timeline">
+              <div class="timeline_title"> 
+                <div class="timeline_title-name">Timeline</div>
+                <div class="timeline_title-icons"> <a class="i fas fa-print" href="#"></a><a class="i far fa-envelope" href="#"></a><a class="i fab fa-facebook-f" href="#"></a><a class="i fab fa-pinterest" href="#"></a>
+                </div>
+              </div>
+              <div class="timeline_line"></div>
+              <div class="timeline_name">Time line</div>
+              <div class="timeline_content">
+                <div class="timeline_content-item">
+                  <div class="item_name">easy</div>
+                  <div class="item_wrap">
+                    <div class="item_block1"></div>
+                    <div class="item_min">15mins</div>
+                  </div>
+                </div>
+                <div class="timeline_content-item">
+                  <div class="item_name">middle</div>
+                  <div class="item_wrap">
+                    <div class="item_block2"></div>
+                    <div class="item_min">25mins</div>
+                  </div>
+                </div>
+                <div class="timeline_content-item">
+                  <div class="item_name">long</div>
+                  <div class="item_wrap">
+                    <div class="item_block3"></div>
+                    <div class="item_min">40mins</div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline_bottom">
+                <div class="timeline_smallline"></div>
+                <div class="timeline_text">Eam adhuc iudico percipitur ex, ut malis audire voluptaria has. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="login_signin">
+          <div class="login">
+            <div class="login_title"> 
+              <div class="login_title-name">Login</div>
+            </div>
+            <div class="login_line"></div>
+            <div class="login_content">
+              <div class="login_content-title">Login for LEMON</div>
+              <input class="login" type="text" placeholder="email or login">
+              <input class="login" type="password" placeholder="password">
+              <div class="login_content-check">
+                <div class="check_wrap">
+                  <input type="checkbox" value="yes" id="check">
+                  <label for="check">Remember me</label>
+                </div><a class="question" href="#">Forgot your password ?</a>
+              </div>
+            </div>
+            <div class="login_bottom">
+              <div class="login_button">
+                <div class="button">login</div>
+              </div>
+              <div class="login_icons"><a class="i fab fa-facebook-f" href="#"></a><a class="i fab fa-google-plus-g" href="#"></a></div>
+              <div class="login_accont">Don't have an accont? <a class="account" href="#">Sign in</a></div>
+            </div>
+          </div>
+          <div class="signin">
+            <div class="signin_title"> 
+              <div class="signin_title-name">Sign in</div>
+            </div>
+            <div class="signin_line"></div>
+            <div class="signin_content">
+              <div class="signin_content-title">Sign in for LEMON</div>
+              <input class="login" type="text" placeholder="email">
+              <input class="login" type="text" placeholder="user name">
+              <input class="login" type="password" placeholder="password">
+              <input class="login" type="password" placeholder="reapet password">
+            </div>
+            <div class="login_bottom">
+              <div class="login_button">
+                <div class="button">sign up</div>
+              </div>
+              <div class="login_icons"><a class="i fab fa-facebook-f" href="#"></a><a class="i fab fa-google-plus-g" href="#"></a></div>
+            </div>
+            <div class="signin_accont">By joining LEMON, you agree to our <a class="account" href="#">Terms of Service</a></div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post_title">
+            <div class="post_title-left">Post a Comment</div>
+            <div class="post_title-right"><span class="post_text">Facebook</span><span class="post_text">/</span><span class="post_text">Twitter</span></div>
+          </div>
+          <div class="post_content">
+            <div class="post_content-foto"></div>
+            <div class="post_content-wrap">
+              <input class="post_input" type="text">
+              <div class="button">post</div>
+            </div>
+          </div>
+        </div>
+        <div class="comments">
+          <div class="comments_title"> 
+            <div class="comments_title-name">Comments</div>
+            <div class="comments_title-icons"></div>
+          </div>
+          <div class="page_block page__opened">
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto1"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">6/10/2014</div>
+                              <div class="img"><img src="assets/image/comments/1.jpg"><a class="circle" href="#"><i class="fab fa-pinterest"></i></a></div>
+                              <div class="comment">Thanks for the recipe</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                                    <div class="comments_line"></div>
+                                    <div class="comments_content">
+                                      <div class="comments_content-foto foto2"></div>
+                                      <div class="comments_content-wrapper">
+                                        <div class="comments_content-container">
+                                          <div class="comments_content-info">
+                                            <div class="info_post">post by</div>
+                                            <div class="user_wrap">
+                                              <div class="user_name">Smuckersreg Toppings</div>
+                                              <div class="user_reply">reply</div>
+                                            </div>
+                                            <div class="data">6/10/2014</div>
+                                            <div class="comment">Thanks for the recipe lorem bla bla bla Thanks for the recipe lore</div>
+                                          </div>
+                                          <div class="comments_content-meta">
+                                            <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                            <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                          <div class="comments_button">6 more comments</div>
+                          <div class="comments_block__closed">
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto1"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">6/10/2014</div>
+                                              <div class="comment">Over the fifteen-year life span of Food.com</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto2"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">4/10/2014</div>
+                                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto3"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">2/10/2014</div>
+                                              <div class="comment"> Foster hasn't always been served on top of ice cream cake.</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto4"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">6/10/2014</div>
+                                              <div class="comment">Over the fifteen-year life span of Food.com</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto1"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">4/10/2014</div>
+                                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto4"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">2/10/2014</div>
+                                              <div class="comment"> Foster hasn't always been served on top of ice cream cake.</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto1"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">29/09/2014</div>
+                              <div class="comment">Thanks for the recipe</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                                    <div class="comments_line"></div>
+                                    <div class="comments_content">
+                                      <div class="comments_content-foto foto4"></div>
+                                      <div class="comments_content-wrapper">
+                                        <div class="comments_content-container">
+                                          <div class="comments_content-info">
+                                            <div class="info_post">post by</div>
+                                            <div class="user_wrap">
+                                              <div class="user_name">Smuckersreg Toppings</div>
+                                              <div class="user_reply">reply</div>
+                                            </div>
+                                            <div class="data">6/10/2014</div>
+                                            <div class="comment">Thanks for the recipe lorem bla bla bla Thanks for the recipe lore</div>
+                                          </div>
+                                          <div class="comments_content-meta">
+                                            <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                            <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                          <div class="comments_button">2 more comments</div>
+                          <div class="comments_block__closed">
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto1"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">6/10/2014</div>
+                                              <div class="comment">Over the fifteen-year life span of Food.com</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto2"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">4/10/2014</div>
+                                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+          <div class="page_block page__closed">
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto3"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">4/10/2014</div>
+                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                                    <div class="comments_line"></div>
+                                    <div class="comments_content">
+                                      <div class="comments_content-foto foto3"></div>
+                                      <div class="comments_content-wrapper">
+                                        <div class="comments_content-container">
+                                          <div class="comments_content-info">
+                                            <div class="info_post">post by</div>
+                                            <div class="user_wrap">
+                                              <div class="user_name">Smuckersreg Toppings</div>
+                                              <div class="user_reply">reply</div>
+                                            </div>
+                                            <div class="data">6/10/2014</div>
+                                            <div class="comment">Thanks for the recipe lorem bla bla bla Thanks for the recipe lore</div>
+                                          </div>
+                                          <div class="comments_content-meta">
+                                            <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                            <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                          <div class="comments_button">5 more comments</div>
+                          <div class="comments_block__closed">
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto1"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">6/10/2014</div>
+                                              <div class="comment">Over the fifteen-year life span of Food.com</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto2"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">4/10/2014</div>
+                                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto2"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">4/10/2014</div>
+                                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto1"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">29/09/2014</div>
+                                              <div class="comment">Thanks for the recipe</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="comments_line"></div>
+                                      <div class="comments_content">
+                                        <div class="comments_content-foto foto4"></div>
+                                        <div class="comments_content-wrapper">
+                                          <div class="comments_content-container">
+                                            <div class="comments_content-info">
+                                              <div class="info_post">post by</div>
+                                              <div class="user_wrap">
+                                                <div class="user_name">Smuckersreg Toppings</div>
+                                                <div class="user_reply">reply</div>
+                                              </div>
+                                              <div class="data">4/10/2014</div>
+                                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                                            </div>
+                                            <div class="comments_content-meta">
+                                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto4"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">2/10/2014</div>
+                              <div class="img"><img src="assets/image/comments/2.jpg"><a class="circle" href="#"><i class="fab fa-pinterest"></i></a></div>
+                              <div class="comment"> Foster hasn't always been served on top of ice cream cake.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto3"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">6/10/2014</div>
+                              <div class="comment">Over the fifteen-year life span of Food.com</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+          <div class="page_block page__closed">
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto2"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">4/10/2014</div>
+                              <div class="img"><img src="assets/image/comments/3.jpg"><a class="circle" href="#"><i class="fab fa-pinterest"></i></a></div>
+                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto1"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">2/10/2014</div>
+                              <div class="comment"> Foster hasn't always been served on top of ice cream cake.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto4"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">29/09/2014</div>
+                              <div class="comment">Thanks for the recipe</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+          <div class="page_block page__closed">
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto1"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">4/10/2014</div>
+                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto2"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">2/10/2014</div>
+                              <div class="comment"> Foster hasn't always been served on top of ice cream cake.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto4"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">6/10/2014</div>
+                              <div class="img"><img src="assets/image/comments/4.jpg"><a class="circle" href="#"><i class="fab fa-pinterest"></i></a></div>
+                              <div class="comment">Over the fifteen-year life span of Food.com</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+          <div class="page_block page__closed">
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto2"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">4/10/2014</div>
+                              <div class="img"><img src="assets/image/comments/1.jpg"><a class="circle" href="#"><i class="fab fa-pinterest"></i></a></div>
+                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto1"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">29/09/2014</div>
+                              <div class="img"><img src="assets/image/comments/2.jpg"><a class="circle" href="#"><i class="fab fa-pinterest"></i></a></div>
+                              <div class="comment">Thanks for the recipe</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto4"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">4/10/2014</div>
+                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+          <div class="page_block page__closed">
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto1"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">2/10/2014</div>
+                              <div class="comment"> Foster hasn't always been served on top of ice cream cake.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto4"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">6/10/2014</div>
+                              <div class="comment">Over the fifteen-year life span of Food.com</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comments_line"></div>
+                      <div class="comments_content">
+                        <div class="comments_content-foto foto1"></div>
+                        <div class="comments_content-wrapper">
+                          <div class="comments_content-container">
+                            <div class="comments_content-info">
+                              <div class="info_post">post by</div>
+                              <div class="user_wrap">
+                                <div class="user_name">Smuckersreg Toppings</div>
+                                <div class="user_reply">reply</div>
+                              </div>
+                              <div class="data">4/10/2014</div>
+                              <div class="comment">Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.</div>
+                            </div>
+                            <div class="comments_content-meta">
+                              <div class="share">456 </div><i class="fas fa-share-alt"></i>
+                              <div class="like">15 </div><i class="far fa-thumbs-up"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+          <div class="comments_line"></div>
+        </div>
+        <div class="pages">
+          <div class="pages_block">
+            <ul>
+              <li class="prev"><</li>
+              <li class="page">1</li>
+              <li class="page">2</li>
+              <li class="page">3</li>
+              <li class="page">4</li>
+              <li class="page">5</li>
+              <li class="page">6</li>
+              <li class="next">></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer_wrapper"><a class="footer_logo" href="#"><img src="assets/image/logo-footer.png"></a>
+            <div class="footer_links">
+              <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">recipe</a></li>
+                <li><a href="#">photo galleries</a></li>
+                <li><a href="#">videos</a></li>
+                <li><a href="#">all categories</a></li>
+              </ul>
+            </div>
+            <div class="footer_reserved"><i class="far fa-copyright"></i>&nbsp; lemon. all right reserved</div>
+          </div>
+          <div class="footer_icons"><a class="i fab fa-google-plus-g" href="#"></a><a class="i fab fa-twitter" href="#"></a><a class="i fab fa-facebook-f" href="#"></a><a class="i fab fa-pinterest" href="#"></a></div>
+        </div>
+      </div>
+    </div>
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="libs/datepicker/datepicker.min.js"></script>
+    <script src="libs/datepicker/datepicker.en.js"></script>
+    <script src="libs/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/mainSlider.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/smallSlider.js"></script>
+    <script src="js/recipesmall.js"></script>
+    <script src="js/comments.js"></script>
+    <script src="js/post.js"></script>
+  </body>
+</html>
