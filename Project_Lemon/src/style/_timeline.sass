@@ -1,0 +1,48 @@
+.timeline
+    @include title
+    &_name
+        @include lettering(2rem, none)
+        color: $titleAnother
+        margin-left: 2rem
+
+    &_content
+        display: flex
+        flex-direction: column
+        transform: rotate(270deg)
+        &-item
+            display: flex
+            flex-direction: column
+            margin: 2rem 0rem 2rem 7rem
+            & .item_name 
+                @include fontSearch(1.6rem, uppercase)
+                font-weight: 300
+            & .item_wrap
+                display: flex
+                align-items: baseline
+                & .item_block1
+                    width: 7rem
+                    height: 1rem
+                    background-color: $colorEasy
+                & .item_block2
+                    width: 10rem
+                    height: 1rem
+                    background-color: $colorMiddle
+                & .item_block3
+                    width: 13rem
+                    height: 1rem
+                    background-color: $colorLong
+                & .item_min
+                    @include fontSearch(1.4rem, none)
+                    font-weight: 300
+                    margin-left: 0.5rem
+    &_bottom
+        padding: 2rem
+    &_smallline
+        @include line
+        margin-top: -7rem
+
+
+    &_text
+        @include fontSearch(1.5rem, none)
+        line-height: 1.3
+        font-weight: 300

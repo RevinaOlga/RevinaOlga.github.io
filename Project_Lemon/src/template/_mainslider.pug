@@ -1,0 +1,16 @@
+.mainslider(id="newest")
+
+    each slider in mainSlider
+        .slider(class= "slide" + slider.id)
+            .slide_logo
+                img(src="assets/image/logo-slider.png")
+            .slider_title= slider.title
+            .slider_content= slider.content
+            a.slider_button(href="#")= slider.button
+
+    .slider-dots
+        each slider in mainSlider
+            .slider-dot(name="dots")
+                input(type="radio" name="dots" id= "check" + slider.id checked= slider.checked)
+                label(for="check" + slider.id)
+        

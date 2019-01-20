@@ -1,0 +1,26 @@
+include component/_metaInfo.pug
+include component/_dots.pug
+.smallSlider(id="healthy")
+    .smallSlider_title Chi-Chi or Chichi
+    .smallSlider_line
+
+    .smallSlider_content
+        .smallSlider_content-info
+            .foto
+            .info
+                .info_recipe Recipe by
+                .info_name Smuckersreg Toppings
+                +meta(15, 12, 37)
+
+        each slider in mainSlider
+            .smallSlider_content-image(class= "smallslide" + slider.id)
+
+        .smallSlider-dots
+            each slider in smallSlider
+                .smallslider-dot(name="dot")
+                    input(type="radio" name="dot" id= "smallcheck" + slider.id checked= slider.checked)
+                    label(for="smallcheck" + slider.id)
+
+
+
+

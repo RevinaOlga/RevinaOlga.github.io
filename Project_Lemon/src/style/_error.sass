@@ -1,0 +1,54 @@
+.error
+    margin: 10rem 2rem 0 2rem
+    width: 52rem
+    min-height: 52rem
+    @include border
+    background-color: $colorLight
+    padding: 2rem 3rem
+    box-sizing: border-box
+    @media screen and (max-width: 600px)
+        max-width: 100%
+        margin-left: auto
+        margin-right: auto
+    &_title
+        @include fontSearch(2rem, none)
+
+    &_wrap
+        margin: 0 auto
+    &_line
+        @include line
+    &_content
+        background: url('../assets/image/error.png') no-repeat
+        width: 90%
+        height: 34rem
+        @include alignCenter
+        flex-direction: column
+        background-position: center
+        margin: 0 auto
+
+        & .item_lettering-title
+            @include fontSearch(3.4rem, none)
+            font-weight: 900
+
+        & .item_lettering-content
+            @include lettering(1.6rem, uppercase)
+
+        & .item_lettering-smile
+            @include lettering(3.4rem, uppercase)
+            transform: rotate(75deg)
+            margin-left: 2rem
+            margin-top: -0.5rem
+            & span.thin
+                font-weight: 100
+
+    &_button
+        @include button(10.5rem, 3rem)
+        font-weight: bold
+        margin: 0 auto
+        margin-top: 2rem
+
+
+        &:hover
+            cursor: pointer
+
+

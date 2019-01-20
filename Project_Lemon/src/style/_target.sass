@@ -1,0 +1,51 @@
+@mixin circle($percent, $deg, $color-active, $color-light)
+    width: 5.8rem
+    height: 5.8rem
+    border-radius: 50%
+    border: solid .3rem transparent
+    background-image: linear-gradient($colorLight, $colorLight), linear-gradient($deg, rgba($color-light, 0.2) 10%, $color-light (100% - $percent), $color-active (100% - $percent), $color-active 100%)
+    background-clip: padding-box, border-box
+    background-origin: padding-box, border-box
+    background-repeat: no-repeat
+
+.target
+    @include title
+
+    &_content
+        margin-left: 1rem
+        &-name
+            @include lettering(2rem, none)
+            color: $titleAnother
+            margin-bottom: 3rem
+
+        &-item
+            display: flex
+            margin-bottom: 4rem
+
+            & .item_circle
+
+                & .digit
+                    @include fontSearch(2.2rem, none)
+                    color: $colorCircle
+
+                & .circle1
+                    @include circle(19, 90deg, $colorLong, $colorCircle)
+                    @include alignCenter
+                & .circle2
+                    @include circle(65, 40deg, $colorMiddle, $colorCircle)
+                    @include alignCenter
+                & .circle3
+                    @include circle(50, 180deg, $colorEasy, $colorCircle)
+                    @include alignCenter
+            & .item_wrap
+                margin-left: 2rem
+
+            & .item_name
+                @include fontSearch(1.8rem, none)
+                color: $colorDot
+
+            & .item_content
+                @include fontSearch(1.4rem, none)
+                font-style: italic
+                line-height: 1.3
+

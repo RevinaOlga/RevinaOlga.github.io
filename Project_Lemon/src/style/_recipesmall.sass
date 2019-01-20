@@ -1,0 +1,50 @@
+.recipesmall
+
+    @include title
+    margin-top: 10rem
+
+
+    &_content
+        margin-left: 1rem
+        &-names
+            display: flex
+            justify-content: space-around
+            & .name
+                @include fontSearch(1.2rem, uppercase)
+                transition-duration: 0.3s
+                &:hover
+                    cursor: pointer
+                    font-weight: bold
+        &-item
+            display: flex
+            margin-top: 2rem
+        &-items
+            display: none
+            &__current
+                display: block
+            & .item_image
+                margin-right: 2rem
+                margin-left: -1rem
+
+            & .item_wrap
+                display: flex
+                flex-direction: column
+                & .username
+                    @include fontSearch(1.2rem, none)
+                    
+                    & span.by
+                        font-weight: bold
+                & .text
+                    @include fontSearch(1.6rem, none)
+                    margin-top: 0.3rem
+                    font-weight: 600
+                    letter-spacing: -0.5px
+                    line-height: 1
+    &_button-wrap
+        display: flex
+        justify-content: flex-end
+        margin: 3rem 0 1rem
+        .button
+            @include button(10.5rem, 3rem)
+            &:hover
+                cursor: pointer

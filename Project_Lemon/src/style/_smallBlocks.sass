@@ -1,0 +1,44 @@
+.smallBlocks
+    display: flex
+    justify-content: space-between
+    align-items: start
+    flex-wrap: wrap
+    &_left
+        display: flex
+        flex-direction: column
+    &_middle
+        display: flex
+        flex-direction: column
+    &_right
+        display: flex
+        flex-direction: column
+
+@import './_smallSlider.sass'
+
+@import './_target.sass'
+
+@import './_recipesmall.sass'
+
+@import './_tags.sass'
+
+@import './_calendar.sass'
+
+@import './_popular.sass'
+
+@import './_timeline.sass'
+
+@media screen and (max-width: 900px)
+    .smallBlocks
+        justify-content: center
+        &_left
+            margin: 0 1rem
+        &_middle
+            margin: 0 1rem
+        &_right
+            margin: 0 1rem
+    .recipesmall
+        margin-top: 5rem
+    .popular
+        margin-top: 5rem
+    .smallSlider
+        margin-top: 5rem

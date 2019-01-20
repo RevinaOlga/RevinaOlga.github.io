@@ -1,0 +1,73 @@
+.post
+    min-width: 40rem
+    max-width: 84rem
+    height: 19rem
+    @include border
+    background-color: $colorLight
+    margin: 5rem auto
+    padding: 2rem 4rem 
+    box-sizing: border-box
+    &_title
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        &-left
+            @include fontSearch(2rem, none)
+        &-right
+            @include fontSearch(1.6rem, none)
+            & span.post_text
+                margin: 0 0.5rem
+    &_content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 9rem
+        background-color: $bglight
+        padding: 2rem
+        box-sizing: border-box
+        margin: 1rem 0 2rem
+        &-foto
+            background: url('../assets/image/smallSlider/foto.jpg') no-repeat
+            width: 5.5rem
+            height: 5.5rem
+            border-radius: 50%
+        &-wrap
+            display: flex
+            & input.post_input
+                width: 50rem
+                height: 4rem
+                box-sizing: border-box
+                padding: 0 1rem
+            & .button
+                @include button(10.5rem, 3rem)
+                max-width: 9rem
+                height: 4rem
+                box-sizing: border-box
+                font-size: 1.6rem
+                background-color: $buttonDark
+                color: $bglight
+                margin-left: 0.5rem
+@media screen and (max-width: 800px)
+    .post_content-wrap input.post_input
+        width: 45rem
+@media screen and (max-width: 750px)
+    .post_content-wrap input.post_input
+        width: 40rem
+@media screen and (max-width: 700px)
+    .post_content-wrap input.post_input
+        width: 35rem
+@media screen and (max-width: 650px)
+    .post_content-wrap input.post_input
+        width: 30rem
+@media screen and (max-width: 600px)
+    .post_content-wrap input.post_input
+        width: 25rem
+@media screen and (max-width: 550px)
+    .post_content-wrap input.post_input
+        width: 20rem
+@media screen and (max-width: 500px)
+    .post_content-wrap input.post_input
+        width: 15rem
+@media screen and (max-width: 450px)
+    .post_content-wrap input.post_input
+        width: 10rem

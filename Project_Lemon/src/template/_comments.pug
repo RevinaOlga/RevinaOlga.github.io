@@ -1,0 +1,95 @@
+.comments
+    .comments_title 
+        .comments_title-name Comments
+        .comments_title-icons
+
+    mixin comment(username,id, data, src, comment)
+        .comments_line
+        .comments_content
+            .comments_content-foto(class= "foto" + id)
+            .comments_content-wrapper
+                .comments_content-container
+                    .comments_content-info
+                        .info_post post by
+                        .user_wrap
+                            .user_name= username
+                            .user_reply reply
+                        .data= data
+                        if (src != "")
+                            .img
+                                img(src= src)
+                                a.circle(href="#")
+                                    i.fab.fa-pinterest
+                        .comment= comment
+                    .comments_content-meta
+                        .share 456 
+                        i.fas.fa-share-alt
+                        .like 15 
+                        i.far.fa-thumbs-up
+                block
+    .page_block.page__opened
+        +comment("Smuckersreg Toppings", 1, "6/10/2014", "assets/image/comments/1.jpg", "Thanks for the recipe")
+            +comment("Smuckersreg Toppings", 2, "6/10/2014", "", "Thanks for the recipe lorem bla bla bla Thanks for the recipe lore")
+            .comments_button 6 more comments
+            .comments_block__closed
+                +comment("Smuckersreg Toppings", 1, "6/10/2014", "", "Over the fifteen-year life span of Food.com")
+                +comment("Smuckersreg Toppings", 2, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+                +comment("Smuckersreg Toppings", 3, "2/10/2014", "", " Foster hasn't always been served on top of ice cream cake.")
+                +comment("Smuckersreg Toppings", 4, "6/10/2014", "", "Over the fifteen-year life span of Food.com")
+                +comment("Smuckersreg Toppings", 1, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+                +comment("Smuckersreg Toppings", 4, "2/10/2014", "", " Foster hasn't always been served on top of ice cream cake.")
+
+        +comment("Smuckersreg Toppings", 1, "29/09/2014", "", "Thanks for the recipe")
+            +comment("Smuckersreg Toppings", 4, "6/10/2014", "", "Thanks for the recipe lorem bla bla bla Thanks for the recipe lore")
+            .comments_button 2 more comments
+            .comments_block__closed
+                +comment("Smuckersreg Toppings", 1, "6/10/2014", "", "Over the fifteen-year life span of Food.com")
+                +comment("Smuckersreg Toppings", 2, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+
+
+    .page_block.page__closed
+        +comment("Smuckersreg Toppings", 3, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+            +comment("Smuckersreg Toppings", 3, "6/10/2014", "", "Thanks for the recipe lorem bla bla bla Thanks for the recipe lore")
+            .comments_button 5 more comments
+            .comments_block__closed
+                +comment("Smuckersreg Toppings", 1, "6/10/2014", "", "Over the fifteen-year life span of Food.com")
+                +comment("Smuckersreg Toppings", 2, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+                +comment("Smuckersreg Toppings", 2, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+                +comment("Smuckersreg Toppings", 1, "29/09/2014", "", "Thanks for the recipe")
+
+                +comment("Smuckersreg Toppings", 4, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+        +comment("Smuckersreg Toppings", 4, "2/10/2014", "assets/image/comments/2.jpg", " Foster hasn't always been served on top of ice cream cake.")
+
+        +comment("Smuckersreg Toppings", 3, "6/10/2014", "", "Over the fifteen-year life span of Food.com")
+    .page_block.page__closed
+        +comment("Smuckersreg Toppings", 2, "4/10/2014", "assets/image/comments/3.jpg", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+        +comment("Smuckersreg Toppings", 1, "2/10/2014", "", " Foster hasn't always been served on top of ice cream cake.")
+        +comment("Smuckersreg Toppings", 4, "29/09/2014", "", "Thanks for the recipe")
+
+    .page_block.page__closed
+        +comment("Smuckersreg Toppings", 1, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+        +comment("Smuckersreg Toppings", 2, "2/10/2014", "", " Foster hasn't always been served on top of ice cream cake.")
+        +comment("Smuckersreg Toppings", 4, "6/10/2014", "assets/image/comments/4.jpg", "Over the fifteen-year life span of Food.com")
+    .page_block.page__closed
+        +comment("Smuckersreg Toppings", 2, "4/10/2014", "assets/image/comments/1.jpg", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+        +comment("Smuckersreg Toppings", 1, "29/09/2014", "assets/image/comments/2.jpg", "Thanks for the recipe")
+
+        +comment("Smuckersreg Toppings", 4, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+    .page_block.page__closed
+        +comment("Smuckersreg Toppings", 1, "2/10/2014", "", " Foster hasn't always been served on top of ice cream cake.")
+        +comment("Smuckersreg Toppings", 4, "6/10/2014", "", "Over the fifteen-year life span of Food.com")
+        +comment("Smuckersreg Toppings", 1, "4/10/2014", "", "Spread with remaining whipped topping. Freeze 3 hours or overnight. Break or crush chocolate wafers and sprinkle over.")
+
+    .comments_line
+
+.pages
+    .pages_block
+        ul
+            li.prev <
+            li.page 1
+            li.page 2
+            li.page 3
+            li.page 4
+            li.page 5
+            li.page 6
+            li.next >

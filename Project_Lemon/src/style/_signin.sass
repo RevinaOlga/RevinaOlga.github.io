@@ -1,0 +1,39 @@
+.signin
+    @include title
+    padding-top: 3rem
+    padding-bottom: 3rem
+    &_content
+        margin-bottom: 3rem
+        &-title
+            @include fontSearch(1.6rem, none)
+            font-weight: 300
+        & input.login
+            max-width: 25rem
+            height: 4rem
+            border: 1px solid $bgBorder
+            box-shadow: none
+            padding: 1rem 2rem
+            @include fontSearch(1.6rem, none)
+            margin-top: 2rem
+            font-weight: 300
+            font-style: italic
+            &::-webkit-input-placeholder
+                color: $lightGrey
+            &:-moz-placeholder
+                color: $lightGrey
+            &::-moz-placeholder
+                color: $lightGrey
+            &:-ms-input-placeholder
+                color: $lightGrey
+            &:focus
+                outline: none
+                box-shadow: inset .1rem .2rem 10px $bgBorder
+    & .signin_accont
+        @include fontSearch(1.4rem, none)
+        font-style: italic
+        font-weight: 300
+        & a.account
+            color: $colorActive
+            &:hover
+                text-decoration: none
+                color: $colorDark

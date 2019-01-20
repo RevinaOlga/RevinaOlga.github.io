@@ -1,0 +1,41 @@
+.header
+    a.header_logo(href="/")
+        img(src="assets/image/logo-header.png")
+    .header_button
+        span
+        span
+        span
+        span
+
+    ul.header_menu
+        li
+            a(href= "/") home
+
+        li.header_menu-dropdown recipes
+            
+            ul.dropdown_item
+                li
+                    a(href="#easy") recommended
+                li
+                    a(href="#popular") popular
+                li
+                    a(href="#easy") quick & easy
+                li
+                    a(href="#healthy") healthy
+                li
+                    a(href="#newest") newest
+                    
+        li
+            a(href= "#gallery") photo galleries
+        li
+            a(href= "#error") videos
+        li
+            a(href= "#recipe") all categories
+
+    .header_search
+        span.icon
+            i(class="fas fa-search")
+        
+        input(type="text" placeholder="find a recipe")
+
+

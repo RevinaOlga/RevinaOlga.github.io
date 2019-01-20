@@ -1,0 +1,156 @@
+.comments
+    @include border
+    background-color: $colorLight
+    margin-top: 5rem
+    padding-top: 3rem
+    box-sizing: border-box
+    margin: 0 auto
+    max-width: 84rem
+    padding-right: 4rem
+    padding-left: 4rem
+    padding-bottom: 4rem
+    @media screen and (max-width: 600px)
+        padding-right: 1rem
+        padding-left: 1rem
+    &_line
+        @include line
+        margin-top: 0.5rem
+    &_title
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        &-name
+            @include fontSearch(2rem, none)
+
+    &_content
+        display: flex
+        margin-top: 2rem
+
+        &-foto
+            width: 5.5rem
+            height: 5.5rem
+            border-radius: 50%
+            margin: 0 2rem 0 1rem
+        & .foto1
+            background: url('../assets/image/smallSlider/foto1.jpg') no-repeat
+        & .foto2
+            background: url('../assets/image/smallSlider/foto2.jpg') no-repeat
+        & .foto3
+            background: url('../assets/image/smallSlider/foto3.jpg') no-repeat
+        & .foto4
+            background: url('../assets/image/smallSlider/foto4.jpg') no-repeat
+        &-wrapper
+            display: flex
+            flex-direction: column
+            width: 100%
+            & .comments_button
+                @include fontSearch(1.6rem, none)
+                font-weight: 300
+                margin: 1rem auto 1rem
+                &:hover
+                    color: $activColor
+                    text-decoration: underline
+                    cursor: pointer
+            & .comments_block__closed
+                max-height: 0
+                overflow: hidden
+                transition-duration: .5s
+            & .comments_block__opened
+                max-height: 100%
+
+            & .comments_content-container
+                display: flex
+                & .comments_content-info
+                    flex-grow: 1
+                    & .info_post
+                        @include fontSearch(1.6rem, none)
+                        font-weight: 300
+                    & .user_wrap
+                        display: flex
+                        align-items: center
+                        & .user_name
+                            @include fontSearch(1.6rem, none)
+                            font-weight: 700
+                            color: $colorDark
+                            margin-right: 1rem
+
+                        & .user_reply
+                            @include fontSearch(1.2rem, none)
+                            color: $activColor
+                            text-decoration: underline
+
+                            &:hover
+                                cursor: pointer
+                    & .data
+                        @include fontSearch(1.2rem, none)
+                        color: $activColor
+                        margin-top: 0.5rem
+                    & .img
+                        width: 100%
+                        height: auto
+                        position: relative
+                        & img
+                            margin-bottom: 1rem
+                            margin-top: 1rem
+                            display: inline-block
+                            
+                        & a.circle
+                            display: inline-block
+                            width: 5.5rem
+                            height: 5.5rem
+                            border-radius: 50%
+                            background-color: $colorLight
+                            position: absolute
+                            top: 2rem
+                            left: 26rem
+                            @include alignCenter
+                            text-decoration: none
+                            color: $colorDot
+                            font-size: 2.8rem
+                    & .comment
+                        @include fontSearch(1.6rem, none)
+                        font-weight: 300
+                        margin-bottom: 2rem
+                    
+                & .comments_content-meta
+                    display: flex
+                    align-items: baseline
+                    @include fontSearch(1.2rem, none)
+                    & .share
+                        font-weight: 700
+                        margin-right: 0.5rem
+                    & .like
+                        margin-right: 0.5rem
+                        margin-left: 1rem
+
+@media screen and (max-width: 500px)
+    .comments
+        overflow-x: auto
+.pages
+    @include border
+    background-color: $colorLight
+    padding: 3rem 2rem 1rem 3rem
+    box-sizing: border-box
+    margin: 5rem auto
+    max-width: 84rem
+    overflow-y: auto
+    &_block
+        & ul
+            display: flex
+            justify-content: center
+            align-items: start
+            & li
+                margin: 0 2rem
+                @include fontSearch(1.8rem, none)
+                font-weight: 300
+                &:hover
+                    cursor: pointer
+                    color: $activColor
+            & li.prev, li.next
+                margin-top: -0.2rem
+
+.page__opened
+    display: block
+
+.page__closed
+    display: none

@@ -1,0 +1,24 @@
+.calendar
+    @include title
+    &_content
+
+        & .datepicker
+            border: none
+            @include fontSearch(1.8rem, none)
+            font-weight: 300
+            & .datepicker--nav
+                border-bottom: none
+            & .datepicker--day-name
+                color: $colorDark
+                text-decoration: underline
+                text-transform: none
+                font-weight: 400
+                font-size: 1.4rem
+            & .datepicker--cell-day
+                font-size: 1.4rem
+                font-weight: 400
+            & .datepicker--cell.-current-
+                color: $colorEasy
+            & .datepicker--cell.-selected-, .datepicker--cell.-selected-.-current- 
+                background: $colorEasy
+                color: $colorLight

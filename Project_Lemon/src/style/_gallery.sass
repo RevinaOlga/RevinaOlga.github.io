@@ -1,0 +1,33 @@
+.gallery
+    margin-top: 8rem
+    max-width: 112rem
+    @include border
+    display: flex
+    justify-content: center
+    background-color: $colorLight
+    padding: 4rem 2.5rem
+    box-color: border-box
+    flex-wrap: wrap
+
+    &_item
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-items: start
+        margin: 0 1.5rem
+        max-width: 32.4rem
+
+        &-title
+            @include fontSearch(1.6rem, none)
+            margin-bottom: 0.2rem
+            margin-top: 0.7rem
+            &:hover
+                text-decoration: underline
+                color: $colorActive
+        &-meta
+            display: flex
+            align-items: baseline
+            @include fontSearch(1.2rem, none)
+            & i 
+                color: $colorDot
+

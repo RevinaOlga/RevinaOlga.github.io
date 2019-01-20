@@ -1,0 +1,100 @@
+.recipe
+    margin-top: 10rem
+    max-width: 112rem
+    @include border
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    background-color: $colorLight
+
+    &_foto
+        width: 55rem
+        height: 44rem
+        position: relative
+        background: url('../assets/image/recipe/foto.jpg') no-repeat
+        font-size: 2.8rem
+        & .foto-label
+            width: 5rem
+            height: 6rem
+            background-color: rgba(0, 0, 0, 0.5)
+            @include alignCenter
+            color: $colorLight
+            position: absolute
+            left: 45rem
+
+    &_item
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin: 3.5rem 0
+        max-width: 57rem
+        padding-left: 1rem
+        padding-right: 3rem
+        box-sizing: border-box
+        @media screen and (max-width: 1136px)
+            padding-left: 3rem
+        &-title
+            font-family: 'Playfair Display', serif
+            font-weight: bold
+            font-size: 2.4rem
+            color: $titleAnother
+        &-metaButton
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            margin: 3rem 0
+            & .item-meta
+                @include fontSearch(1.6rem, none)
+                color: $colorDot
+                display: flex
+                justify-content: center
+                align-items: baseline
+
+                & i
+                    color: $colorDot
+
+                & .indicator
+                    display: flex
+                    justify-content: flex-end
+                    transform: rotate(180deg)
+                    & .line
+                        width: 0.5rem
+                        margin-right: 0.2rem
+                        border: 1px solid $colorDot
+                        box-sizing: border-box
+                        display: flex
+                        &_4
+                            height: 0.5rem
+                            background-color: $colorDot
+                        &_3
+                            height: 1rem
+                            background-color: $colorDot
+                        &_2
+                            height: 1.5rem
+                            background-color: $colorDot
+                        &_1
+                            height: 2rem
+            & .item-button
+                @include button(10rem, 3rem)
+                &:hover
+                    cursor: pointer
+
+.recipe_item-contents
+    max-height: 26rem
+
+
+    .ingredients
+        display: flex
+        flex-direction: column
+        @include fontSearch(1.6rem, none)
+    .caption
+        @include fontHeader
+        text-transform: none
+        font-weight: bold
+        margin: 2rem 0
+    .content2
+        @include fontSearch(1.6rem, none)
+
+
+
+

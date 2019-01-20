@@ -1,0 +1,59 @@
+.footer
+    max-width: 112rem
+    min-height: 18rem
+    background-color: $bgfooter
+    color: $colorLight
+    display: flex
+    flex-direction: column
+    align-items: baseline
+    justify-content: center
+    padding: 2rem 5rem 0 8rem
+    box-sizing: border-box
+    
+
+    &_wrapper
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        @media screen and (max-width: 900px)
+            flex-direction: column
+        @media screen and (max-width: 600px)
+            flex-direction: column
+            align-items: start
+        & .footer_logo
+        & .footer_links
+            & ul
+                display: flex
+                @media screen and (max-width: 600px)
+                    flex-direction: column
+                & li
+                    margin: 1rem
+                    & a
+                        @include fontSearch(1.2rem, uppercase)
+                        color: $bgBorder
+                        font-weight: 300
+                        &:hover
+                            color: $colorLight
+        & .footer_reserved
+            @include fontSearch(1.2rem, uppercase)
+            font-weight: 300
+            color: $bgBorder
+            margin: 1rem 0
+    &_icons
+        display: flex
+        align-self: flex-end
+        align-items: center
+        @media screen and (max-width: 600px)
+            align-self: start
+        & a.i
+            text-decoration: none
+            color: $bgBorder
+            font-size: 1.4rem
+            margin: 1rem 0.5rem
+            &:hover
+                color: $colorLight
+        & a.i.fab.fa-google-plus-g
+            font-size: 1.8rem
+

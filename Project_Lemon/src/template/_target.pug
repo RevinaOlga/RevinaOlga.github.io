@@ -1,0 +1,18 @@
+include component/_icons.pug
+.target
+    .target_title 
+        .target_title-name Target
+        .target_title-icons 
+            +icons
+    .target_line
+    .target_content
+        .target_content-name Presentation line
+        each target in targets
+            .target_content-item
+                .item_circle
+                    div(class = "circle" + target.id)
+                        .digit= target.persent
+                            |%
+                .item_wrap
+                    .item_name= target.name
+                    .item_content= target.content

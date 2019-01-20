@@ -1,0 +1,76 @@
+@keyframes animateSlide 
+    from 
+        opacity: .4
+    
+    to 
+        opacity: 1
+
+.mainslider
+    margin-top: 10rem
+    max-width: 112rem
+    height: 44rem
+    @include border
+    position: relative
+
+.slider
+    max-width: 112rem
+    height: 44rem
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    padding-left: 9rem
+    padding-top: 5rem
+    padding-bottom: 5.5rem
+    box-sizing: border-box
+    animation-name: animateSlide
+    animation-duration: 1s
+    @media screen and (max-width: 600px)
+        padding-left: 4rem
+    &__current
+        display: flex
+    &_title
+        font-family: 'Playfair Display', serif
+        font-size: 2.4rem
+        font-weight: bold
+        color: $titleColor
+    &_content
+        @include fontSearch(1.4rem, none)
+        max-width: 32rem
+        overflow-y: auto
+    &_button
+        @include button(10rem, 3rem)
+
+
+
+@for $i from 1 through 5
+    .slide#{$i}
+        background: url('../assets/image/mainSlider/' + $i + '.jpg') no-repeat
+
+
+
+
+.slider-dots
+    display: flex
+    position: absolute
+    bottom: 2rem
+    right: 1.5rem
+    & .slider-dot
+
+        & input
+            display: none
+
+        & label::after
+            content: ''
+            display: inline-block
+            width: .8rem
+            height: .8rem
+            border-radius: 50%
+            background-color: $colorLight
+            margin: 0 .4rem
+    & .slider-dot input:checked ~ label::after
+        display: inline-block
+        background-color: $colorDot
+
+    & .slider-dot:hover input:not(:checked) ~ label::after
+        display: inline-block
+        background-color: $colorDot

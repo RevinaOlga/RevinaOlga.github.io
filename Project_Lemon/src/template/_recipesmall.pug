@@ -1,0 +1,47 @@
+include component/_icons.pug
+.recipesmall(id="recipe")
+    .recipesmall_title
+        .recipesmall_title-name Recipe
+        .recipesmall_title-icons 
+            +icons
+    .recipesmall_line
+    .recipesmall_content
+        .recipesmall_content-names
+            .name.easy Easy
+            .name.middle Middle
+            .name.long Long
+
+        .recipesmall_content-items.recipesmall_content-items__current
+            each item in recipesmallEasy
+                .recipesmall_content-item.easy_item
+                    .item_image
+                        img(src="assets/image/recipesmall/" + item.id + ".jpg")
+                    .item_wrap
+                        .username by 
+                            span.by= item.username
+                        .text= item.text
+
+        .recipesmall_content-items
+            each item in recipesmallMiddle
+                .recipesmall_content-item.middle_item
+                    .item_image
+                        img(src="assets/image/recipesmall/" + item.id + ".jpg")
+                    .item_wrap
+                        .username by 
+                            span.by= item.username
+                        .text= item.text
+
+        .recipesmall_content-items
+            each item in recipesmallLong
+                .recipesmall_content-item.long_item
+                    .item_image
+                        img(src="assets/image/recipesmall/" + item.id + ".jpg")
+                    .item_wrap
+                        .username by 
+                            span.by= item.username
+                        .text= item.text
+
+    .recipesmall_button-wrap
+        .button view more
+
+

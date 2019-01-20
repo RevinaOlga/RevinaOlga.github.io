@@ -1,0 +1,10 @@
+include component/_metaInfo.pug
+.gallery(id="gallery")
+
+    each gallery in galleries
+        .gallery_item
+            .gallery_item-foto
+                img(src="assets/image/gallery/" + gallery.id + ".jpg")
+            a.gallery_item-title(href="#")= gallery.title
+            +meta(gallery.time, gallery.comment, gallery.view)
+

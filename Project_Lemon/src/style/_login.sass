@@ -1,0 +1,103 @@
+.login_signin
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+.login
+    @include title
+    padding-top: 3rem
+    padding-bottom: 3rem
+    height: 43rem
+    &_content
+        &-title
+            @include fontSearch(1.6rem, none)
+            font-weight: 300
+        & input.login
+            max-width: 25rem
+            height: 4rem
+            border: 1px solid $bgBorder
+            box-shadow: none
+            padding: 1rem 2rem
+            @include fontSearch(1.6rem, none)
+            margin-top: 2rem
+            font-weight: 300
+            font-style: italic
+            &::-webkit-input-placeholder
+                color: $lightGrey
+            &:-moz-placeholder
+                color: $lightGrey
+            &::-moz-placeholder
+                color: $lightGrey
+            &:-ms-input-placeholder
+                color: $lightGrey
+            &:focus
+                outline: none
+                box-shadow: inset .1rem .2rem 10px $bgBorder
+
+        &-check
+            display: flex
+            justify-content: space-between
+            align-items: baseline
+            margin: 1rem 0 3rem 0
+            & .check_wrap
+
+                & input
+                    display: none
+                & label::before
+                    content: ''
+                    width: 0.8rem
+                    height: 0.8rem
+                    background-color: $colorLight
+                    display: inline-block
+                    border: 1px solid $bgBorder
+                    border-radius: 2%
+                    margin: .4rem .4rem 0 0
+                    box-sizing: border-box
+                    
+                & input:checked ~ label::before
+                    border: 2px solid $bgBorder
+                    box-sizing: border-box
+                    background-color: $colorDot
+                & label
+                    @include fontSearch(1.2rem, none)
+                    font-weight: 300
+                    font-style: italic
+            & a.question
+                @include fontSearch(1.2rem, none)
+                font-weight: 300
+                font-style: italic
+    &_bottom
+        display: flex
+        flex-direction: column
+        align-items: center
+        & .login_button
+            & .button
+                @include button(10.5rem, 3rem)
+        & .login_icons
+            font-size: 2rem
+            font-weight: bold
+            display: flex
+            align-items: center
+
+            & a
+                text-decoration: none
+                color: $colorDot
+                margin: 2rem 1rem
+            & a.i.fab.fa-google-plus-g
+                font-size: 2.4rem
+        & .login_accont
+            @include fontSearch(1.4rem, none)
+            font-style: italic
+            font-weight: 300
+            & a.account
+                text-decoration: none
+                color: $colorDark
+                &:hover
+                    text-decoration: underline
+                    color: $colorActive
+
+
+
+
+
+

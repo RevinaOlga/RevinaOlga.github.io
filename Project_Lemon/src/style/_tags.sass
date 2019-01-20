@@ -1,0 +1,13 @@
+.tags
+    @include title
+    &_content
+        display: flex
+        flex-wrap: wrap
+        margin: -1rem 0 1rem
+        & a.tag
+            @include fontSearch(1.1rem, uppercase)
+            font-weight: 300
+            margin: 0 .6rem .5rem
+            &:hover
+                color: $titleAnother
+                font-weight: 700

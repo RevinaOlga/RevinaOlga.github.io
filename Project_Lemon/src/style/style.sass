@@ -1,0 +1,152 @@
+$bgMain: #EAEAEA
+$bgBlock: #F8F8F8
+$bgBorder: #C2C2C2
+$colorLink: #B7B7B7
+$colorDark: #000000
+$activColor: #629494
+$titleColor: #911026
+$titleAnother: #055555
+$colorLong: #B50051
+$colorMiddle: #0D5959
+$colorEasy: #87D0C5
+$colorCircle: #B7B7B7
+$colorDot: #555555
+$lightGrey: #D2D2D2
+$colorLight: #ffffff
+$colorActive: #002DD6
+$buttonDark: #383737
+$bglight: #F6F6F6
+$bgfooter: #2F2F2F
+
+
+
+html
+    font-size: 10px
+
+.main_bg
+    background-color: $bgMain
+    width: 100%
+    padding-bottom: 10rem
+
+.main_aling
+    max-width: 112rem
+    margin: 0 auto
+
+@font-face
+    font-family: MyriadPro
+    src: url('../assets/fonts/myriadPro.otf')
+
+@mixin border
+    box-shadow: 0px 0px 30px rgba(#0B0C0C, .15)
+
+
+@mixin fontHeader
+    text-transform: uppercase
+    font-size: 1.6rem
+    text-decoration: none
+    color: $colorDark
+    font-family: MyriadPro
+
+@mixin fontSearch($size, $transform)
+    text-transform: $transform
+    font-size: $size
+    text-decoration: none
+    color: $colorDark
+    line-height: 1.3
+    font-family: 'Josefin Sans', sans-serif
+
+@mixin lettering($size, $transform)
+    text-transform: $transform
+    font-size: $size
+    font-weight: bold
+    text-decoration: none
+    color: $bgBorder
+    line-height: 1.5
+    font-family: 'Playfair Display', serif
+
+
+@mixin alignCenter
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin button($width, $height)
+    width: $width
+    height: $height
+    border: 1px solid $bgBorder
+    @include alignCenter
+    @include fontSearch(1.2rem, uppercase)
+    &:hover
+        cursor: pointer
+
+@mixin line
+    width: 100%
+    height: 0.2rem
+    background-color: $bgBorder
+    margin-bottom: 2rem
+
+@mixin icons
+    & a.i 
+        margin-left: 1.5rem
+        color: $colorDot
+        font-size: 1.6rem
+        text-decoration: none
+
+@mixin title
+    width: 29rem
+    @include border
+    background-color: $colorLight
+    margin-top: 5rem
+    padding: 3rem 2rem 1rem
+    box-sizing: border-box
+    &_line
+        @include line
+        margin-top: 0.5rem
+    &_title
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        &-name
+            @include fontSearch(2rem, none)
+        &-icons
+            @include icons
+
+
+@import './_header.sass'
+
+@import './_mainslider.sass'
+
+@import './_gallery.sass'
+
+@import './_recipe.sass'
+
+.err_auth
+    max-width: 112rem
+    display: flex
+    justify-content: center
+@media screen and (max-width: 1000px)
+    .err_auth
+        flex-direction: column
+        align-items: center
+
+@media screen and (max-width: 600px)
+    .err_auth
+        max-width: 52rem
+        flex-direction: column
+        align-items: start
+
+@import './_error.sass'
+
+@import './_author.sass'
+
+@import './_smallBlocks.sass'
+
+@import './_login.sass'
+
+@import './_signin.sass'
+
+@import './_post.sass'
+
+@import './_comments.sass'
+
+@import './_footer.sass'

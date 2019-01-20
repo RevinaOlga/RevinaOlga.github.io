@@ -1,0 +1,35 @@
+.popular
+    width: 29rem
+    height: 35rem
+    background: url('/assets/image/popular/bg.jpg') no-repeat
+    @include border
+    background-color: $colorLight
+    margin-top: 10rem
+    padding: 2rem 1.5rem 0
+    box-sizing: border-box
+    &_name
+        @include lettering(3.2rem, none)
+        color: $titleColor
+        display: flex
+    &_title
+        @include fontSearch(2.2rem, none)
+        font-weight: 700
+        color: $colorDark
+        letter-spacing: -1px
+        margin: 2rem 0 0.5rem
+    &_content
+        @include fontSearch(1.6rem, none)
+        font-weight: 400
+        font-style: italic
+        color: $colorDark
+        line-height: 1.3
+        margin-bottom: 1rem
+    &_block-meta
+        display: flex
+        align-items: baseline
+        font-family: 'Josefin Sans', sans-serif
+        & .meta_button
+            @include button(10.5rem, 3rem)
+            margin-right: 1rem
+            &:hover
+                cursor: pointer
