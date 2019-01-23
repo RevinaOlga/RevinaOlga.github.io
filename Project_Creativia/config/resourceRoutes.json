@@ -1,0 +1,38 @@
+[
+    {
+        "from": "./node_modules/jquery/dist/jquery.js",
+        "to": "/libs/jquery/jquery.js"
+    },
+    {
+        "from": "./node_modules/reset-css/reset.css",
+        "to": "/libs/reset-css/reset.css"
+    },
+    {
+        "from": "./node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css",
+        "to": "/libs/scrollbar/jquery.mCustomScrollbar.css"
+    },
+    {
+        "from": "./node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js",
+        "to": "/libs/scrollbar/jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+        "from": "./node_modules/air-datepicker/dist/css/datepicker.min.css",
+        "to": "/libs/datepicker/datepicker.min.css"
+    },
+    {
+        "from": "./node_modules/air-datepicker/dist/js/datepicker.min.js",
+        "to": "/libs/datepicker/datepicker.min.js"
+    },
+    {
+        "from": "./node_modules/air-datepicker/dist/js/i18n/datepicker.en.js",
+        "to": "/libs/datepicker/datepicker.en.js"
+    },
+    {
+        "from": "./src/assets/",
+        "to": "/assets"
+    },
+    {
+        "from": "./src/js/",
+        "to": "/js"
+    }
+]

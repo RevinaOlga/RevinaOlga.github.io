@@ -1,0 +1,46 @@
+.feature
+    .center
+        h1 
+            |our 
+            span.mark-color product features
+    h2.boldGrey 
+        |Lorem ipsum dolor sit amet, consectetur 
+        span.mark-color adipiscing elit. 
+        |Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
+    
+    
+    .feature_wrap
+    
+        .feature_column
+            
+            each featureItenName in featureItenNames
+
+                .feature_item.feature_item-left 
+
+                    .feature_item-name= featureItenName.name
+
+                    .feature_item-icon
+
+                        img.icon1(src="assets/image/feature/icon1.png")
+
+                        img.icon2(src="assets/image/feature/icon2.png")
+    
+        .feature_image
+
+            a.feature-button.buttonFont(href="#") free psd
+
+
+        .feature_column
+
+            each featureItenName in featureItenNames
+
+                .feature_item.feature_item-right 
+
+                    .feature_item-icon
+
+                        img.icon1(src="assets/image/feature/icon1.png")
+
+                        img.icon2(src="assets/image/feature/icon2.png")
+                            
+                    .feature_item-name= featureItenName.name
+                    

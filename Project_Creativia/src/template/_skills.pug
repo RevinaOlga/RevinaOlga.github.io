@@ -1,0 +1,30 @@
+.skills
+    .center
+        h1.dark 
+            |our 
+            span.mark-color Skills
+    h2.boldGrey
+        |Lorem ipsum dolor sit amet, consectetur 
+        span.mark-color adipiscing elit 
+        |. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
+
+    .skills_wrap
+
+
+        each skillItem in skillItems
+
+
+            .skill
+
+                div(class="skill_circle" + skillItem.id)
+
+                    .digit 
+
+                        span.mark-color= skillItem.percent
+
+                        |%
+
+
+                .skill_name= skillItem.name
+
+                .skill_content= skillItem.content

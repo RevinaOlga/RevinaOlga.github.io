@@ -1,0 +1,73 @@
+
+.hexagon
+    @include hexagonBorder(4rem, $light, 1rem, $light)
+
+
+.team
+    margin: 0 auto
+    padding-bottom: 5rem
+    padding-top: 10rem
+    
+
+    &_wrap
+        display: flex
+        justify-content: center
+        margin-top: 10rem
+
+    &-item
+        min-width: 27rem
+        min-height: 36rem
+        outline: 1px solid $border-color
+        margin: 5rem 2rem
+        transition-duration: .5s
+
+        & .item_image
+            display: inline-block
+
+        & .item_title
+            @include alighCenter
+            flex-direction: column
+            min-height: 12rem
+
+            &-name
+                margin-bottom: 1rem
+                @include linkTitle($darkGreyColor, uppercase)
+
+            &-profession
+                @include textContentFont($GreyColor)
+                margin-top: 1rem
+
+        & .item_image__hover
+            display: none
+            background-color: $darkGreyColor
+            width: 27rem
+            height: 24rem
+
+            & a.icon
+                @include alighCenter
+                margin: 0 2rem
+
+
+.team-item:hover 
+    outline: 0.1rem solid #000
+
+    & .item_title-name
+        color: $activColor
+
+    & .item_image__hover
+        @include alighCenter
+
+        & a.icon
+            cursor: pointer
+
+    & .item_image
+        display: none
+
+
+@media screen and (max-width: 1200px)
+
+    .team_wrap
+        flex-wrap: wrap
+
+
+

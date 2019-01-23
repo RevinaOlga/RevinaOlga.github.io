@@ -1,0 +1,64 @@
+.client(id="clients")
+    .center
+        h1.white 
+            |our 
+            span.mark-color clients
+    h2.light
+        |Lorem ipsum dolor sit amet, consectetur 
+        span.mark-color adipiscing elit 
+        |. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+    .client_block
+        
+        .client_block-items
+
+            h3.items_title happy clients say
+
+
+            .client_block_wrap
+                
+
+                each client in clients
+                
+                    .client_block-item
+
+                        p.item_content= client.content
+
+                        img.item_image(src= client.link)
+
+                        span.item_name= client.name
+
+
+                .client_radio_buttons
+
+                    each clientRadioButton in clientRadioButtons
+
+                        .client-radio_button(name="check")
+
+                            input(type="radio" name="check" id="check" + clientRadioButton.id checked= clientRadioButton.checked)
+
+                            label(for="check" + clientRadioButton.id)
+
+
+        mixin clientIcon(href, link, name)
+
+                a.client_icon(href= href)
+
+                    img.client_icon-image(src= link)
+
+                    .client_icon-title= name
+
+
+        .client_icons
+
+            .client_icons-wrap
+
+                each clientIconTop in clientIconsTop
+
+                    +clientIcon(clientIconTop.href, clientIconTop.link, clientIconTop.name)
+
+
+            .client_icons-wrap
+
+                each clientIconBottom in clientIconsBottom
+
+                    +clientIcon(clientIconBottom.href, clientIconBottom.link, clientIconBottom.name)

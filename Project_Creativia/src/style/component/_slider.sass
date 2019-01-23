@@ -1,0 +1,89 @@
+@keyframes animateSlide 
+    from 
+        opacity: .6
+    to 
+        opacity: 1
+
+.slider
+    max-width: 140rem
+    position: relative
+    margin: auto
+    min-height: 70rem
+    margin-bottom: 1.5rem
+
+
+    &_item img 
+        width: 140rem
+        height: 70rem
+
+    &_item 
+        height: 70rem
+        display: none
+
+        &-content
+            position: absolute
+            color: $lightGreyColor
+            margin: 0 auto
+            flex-direction: column
+            left: 0
+            right: 0
+            top: 30%
+            max-width: 80%
+        &-1
+            display: block
+            opacity: 1
+            background: url("../assets/image/main/main-bg.jpg") no-repeat
+            background-position: center
+        &-2
+            background: url("../assets/image/main/1.jpg") no-repeat
+            background-position: center
+        &-3
+            background: url("../assets/image/main/2.jpg") no-repeat
+            background-position: center
+        &__current
+            animation-name: animateSlide
+            animation-duration: 1.5s
+
+
+@mixin slideButton
+    cursor: pointer
+    position: absolute
+    top: 45%
+    padding: 2rem
+    color: $lightGreyColor
+    font-weight: bold
+    font-size: 3rem
+    transition: 0.6s ease
+
+.slider .prev
+    @include slideButton
+    left: 0
+    border-radius: 0 3px 3px 0
+
+.slider .next 
+    @include slideButton
+    right: 0
+    border-radius: 3px 0 0 3px
+
+
+.slider .prev:hover, .slider .next:hover 
+    background-color: rgba(0, 0, 0, 0.8)
+    color: $activColor
+
+
+.buttons
+    margin-bottom: 18rem
+    margin-top: 5rem
+    height: 5rem
+    text-align: center
+
+.button-dark
+    @include button
+    background-color: $bgHeader
+    margin: 1rem 1.5rem
+    transition-duration: .3s
+    text-decoration: none
+
+    &:hover
+        background-color: $activColor
+        color: $light

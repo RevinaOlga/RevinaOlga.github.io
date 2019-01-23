@@ -1,0 +1,62 @@
+.skills
+    margin: 0 auto
+    padding-bottom: 10rem
+    
+
+    &_wrap
+        @include alighCenter
+        margin-top: 10rem
+
+    & .digit
+        font-size: 4rem
+        font-family: $fontLato
+
+@mixin circle($percent, $color-active, $color-light)
+    width: 15rem
+    height: 15rem
+    border-radius: 50%
+    border: solid 0.3rem transparent
+    background-image: linear-gradient($light, $light), linear-gradient(270deg, $color-light 10%, $color-light (100% - $percent), $color-active (100% - $percent), $color-active 100%)
+    background-clip: padding-box, border-box
+    background-origin: padding-box, border-box
+    background-repeat: no-repeat
+
+.skill
+    @include alighCenter
+    flex-direction: column
+    margin: 0 2rem
+    max-width: 17rem
+
+    &_name
+        @include linkTitle($darkGreyColor, uppercase)
+        margin: 2rem 0
+
+    &_content
+        @include textContentFont($GreyColor)
+        text-align: center
+
+
+@media screen and (max-width: 1000px)
+    .skills_wrap
+        flex-wrap: wrap
+
+    .skill
+        margin: 5rem 2rem
+
+.skill_circle1
+    @include circle(90%, $activColor, $circleLight)
+    @include alighCenter
+
+.skill_circle2
+    @include circle(80%, $activColor, $circleLight)
+    @include alighCenter
+
+.skill_circle3
+    @include circle(70%, $activColor, $circleLight)
+    @include alighCenter
+
+.skill_circle4
+    @include circle(90%, $activColor, $circleLight)
+    @include alighCenter
+
+

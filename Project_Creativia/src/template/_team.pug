@@ -1,0 +1,46 @@
+.team(id="team")
+    .center
+        h1.dark 
+            |our 
+            span.mark-color teamwork
+    h2.boldGrey
+        |Lorem ipsum dolor sit amet, consectetur 
+        span.mark-color adipiscing elit 
+        |. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
+
+    .team_wrap
+
+
+        each teamItem in teamItems
+
+            .team-item
+                
+                img.item_image(src= teamItem.href)
+
+                .item_image__hover
+
+
+
+                    mixin teamIcon(href, link)
+
+                        a.icon.hexagon(target="_blank" href= href)
+
+                            img(src= link)
+
+
+
+
+                    each teamIcon in teamIcons
+
+                        +teamIcon(teamIcon.href, teamIcon.link)
+
+
+
+                .item_title
+
+                    .item_title-name= teamItem.name
+
+                    .item_title-profession= teamItem.profession
+
+
+

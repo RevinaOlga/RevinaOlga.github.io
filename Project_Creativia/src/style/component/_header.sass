@@ -1,0 +1,129 @@
+@mixin lineAlign
+    background: url('../assets/image/main/hover-line.png') no-repeat
+    width: 3rem
+    height: 0.3rem
+    position: absolute
+    margin: 0 auto
+    left: 0
+    right: 0
+
+.main_header
+    max-width: 140rem
+    background-color: $bgHeader
+    margin: 0 auto
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 10
+
+
+.header
+    display: flex
+    justify-content: space-between
+    max-width: 117rem
+    margin: 0 auto
+    background-color: $bgHeader
+    height: $heightMenu
+
+
+    &_logo
+        height: $heightMenu
+
+    &_menu
+        margin-right: 4rem
+        @media screen and (max-width: 500px)
+            margin-right: 0rem
+
+
+        &-item
+            display: inline-block
+            margin: 0 1rem
+
+.item_link
+    display: inline-block
+    text-transform: uppercase
+    font-family: $fontRaleway
+    font-size: 1.8rem
+    color: $lightGreyColor
+    line-height: $heightMenu
+    position: relative
+    text-decoration: none
+
+    &:hover
+        color: $light
+
+        & .line_bottom
+            @include lineAlign
+            bottom: 0
+
+
+        & .line_top
+            @include lineAlign
+            top: 0
+
+
+@media screen and (max-width: 1100px)
+
+    .header__current
+        display: block
+
+    .header_logo__current
+        opacity: 0.2
+
+    .header_menu
+        height: 0
+        overflow: hidden
+
+        &__current
+            margin-right: 0
+            height: $heightMenu*8
+            transition: height .5s ease-out
+
+        &-item
+            margin: 0
+
+        &-item__current
+            display: block
+
+
+    .item_link
+        margin-right: 0
+
+
+        &__current
+            display: block
+            background-color: rgba($bgHeader, 0.9)
+            padding-left: 5rem
+
+        &:hover .line_top
+            display: none
+
+        &:hover .line_bottom
+            display: none
+
+
+    .header_button
+        height: 4rem
+        width: 6rem
+        border: 0.1rem solid #414141
+        border-radius: 0.3rem
+        position: absolute
+        top: 1.5rem
+        right: 3.5rem
+        @include alighCenter
+        transition-duration: .3s
+
+        &:hover
+            border: 0.1rem solid $activColor
+            cursor: pointer
+            .button-lines
+                background: url('../assets/image/main/menu-button-line-active.png') no-repeat
+
+    .button-lines
+        height: 1.6rem
+        width: 2.6rem
+        background: url('../assets/image/main/menu-button-line.png') no-repeat
+        transition-duration: .3s
+
+

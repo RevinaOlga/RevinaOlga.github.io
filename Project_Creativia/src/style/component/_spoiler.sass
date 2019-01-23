@@ -1,0 +1,48 @@
+
+.spoilers
+    max-width: 57rem
+
+.spoiler
+    margin-bottom: 1rem
+
+    &_header
+        display: flex
+        background-color: $bgSpoilerColor
+        height: 4.5rem
+        border: 0.1rem solid $border-color
+
+    &_header-icon
+        @include alighCenter
+        width: 6rem
+        border-right: 0.1rem solid $border-color
+
+    &_header-title 
+        @include alighCenter
+        margin-left: 2rem
+        font-family: $fontRaleway
+        font-weight: bold
+        color: $GreyColor
+        font-size: 1.8rem
+
+        &__current 
+            color: $activColor
+
+    &_content 
+        height: 0
+        padding-top: 0
+        overflow: hidden
+        transition: height .3s, padding-top .3s
+
+        &__current 
+            border: 0.1rem solid $bgSpoilerColor
+            border-top: none
+            padding: 1.5rem
+            box-sizing: border-box
+            height: auto
+            color: $GreyColor
+            font-size: 1.4rem
+            font-family: $fontLato
+            line-height: 2.8rem
+            text-align: justify
+
+

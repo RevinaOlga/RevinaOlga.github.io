@@ -1,0 +1,85 @@
+.feature
+    margin: 10rem auto
+
+    &_wrap
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        flex-wrap: wrap
+        margin-top: 10rem
+
+    &_column
+        display: flex
+        flex-direction: column
+        margin-top: 10rem
+
+    &_item
+        width: 37rem
+        height: 5rem
+        margin: 1rem
+        outline: 0.1rem solid $border-color
+        display: flex
+        align-items: center
+        @include linkTitle($darkGreyColor, uppercase)
+        transition-duration: .3s
+
+        &-icon
+            @include hexagonBorder(3rem, $border-color, 0.9rem, $border-color)
+            margin: 0 2rem
+
+        & img.icon2
+            display: inline-block
+
+        & img.icon1
+            display: none 
+
+        &-left
+            justify-content: flex-end
+
+        &-right
+            justify-content: flex-start
+
+        &:hover
+            cursor: pointer
+            background-color: $activColor
+            color: $light
+            
+
+            & .feature_item-icon
+                @include hexagonBorder(3rem, $light, 0.9rem, $light)
+
+                & img.icon1
+                    display: inline-block
+
+                & img.icon2
+                    display: none 
+
+
+.feature_image
+    text-align: center
+    background: url("../assets/image/feature/image.jpg") no-repeat
+    background-position: center
+    width: 50rem
+    height: 60rem
+    display: flex
+    justify-content: center
+    align-items: flex-end
+
+
+
+.feature-button
+    @include button
+    background-color: $buttonGreyColor
+    outline: 1px solid $buttonGreyColor
+    margin-bottom: 8rem
+    transition: outline .3s
+    text-decoration: none
+    
+    &:hover
+        outline: 0.1rem solid $activColor
+        color: $light
+
+
+@media screen and (max-width: 1300px)
+    .feature_column
+        margin: 1rem 0 

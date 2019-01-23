@@ -1,0 +1,42 @@
+.portfolio(id="portfolio")
+
+    .portfolio_top
+        
+        .center
+
+            h1.white portfolio
+
+        ul.portfolio_top-menu
+
+            each item in portfolioMenuItems
+
+                li.portfolio_top-menu_item
+
+                    .item_link= item.name
+
+
+    .portfolio_icons
+
+        mixin portfolioIcon(href, name, id, className)
+
+            a.portfolio_icon(href= href class= "portfolio_icon" + id class = className)
+
+                .portfolio_icon-layer
+
+                    img(src="assets/image/portfolio/portfolio-plus.png")
+                        
+                    .portfolio_icon-name= name
+
+        +portfolioIcon("#", "illustration", 1, "illustration")
+        +portfolioIcon("#", "illustration", 2, "illustration")
+        +portfolioIcon("#", "illustration", 3, "illustration")
+        +portfolioIcon("#", "illustration", 4, "illustration")
+        +portfolioIcon("#", "digital art", 5, "art")
+        +portfolioIcon("#", "digital art", 6, "art")
+        +portfolioIcon("#", "web design", 7, "design")
+        +portfolioIcon("#", "web design", 8, "design")
+
+
+            
+    .portfolio-bottom
+

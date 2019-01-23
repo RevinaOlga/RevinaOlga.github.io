@@ -1,0 +1,109 @@
+.portfolio
+    margin: 0 auto
+    max-width: 140rem
+
+
+.portfolio_top 
+    padding-top: 8rem
+    height: 27rem
+    background-color: $darkGreyColor
+    text-align: center
+    box-sizing: border-box
+
+
+    &-menu 
+        margin-top: 2rem
+        @include alighCenter
+        flex-wrap: wrap
+
+        &_item 
+            display: inline-block
+            font-weight: bold
+            margin-right: 2rem
+            margin-top: 3rem
+
+            & .item_link 
+                @include textContentFont($lightGreyColor)
+                transition-duration: .3s
+                text-decoration: none
+
+                &:hover 
+                    
+                    color: $activColor
+                    transition: color .2s
+                    cursor: pointer
+
+
+@mixin portfolioIcon($width, $id)
+    width: $width
+    height: 35rem
+    position: relative
+    background: url('../assets/image/portfolio/portfolio-icon' + $id + '.png') no-repeat
+
+    & .portfolio_icon-layer
+        height: 0
+        @include alighCenter
+        flex-direction: column
+        background-color: transparent
+
+        & img
+            height: 0
+
+        & .portfolio_icon-name
+            overflow: hidden
+
+    &:hover
+        & .portfolio_icon-layer
+            position: absolute
+            width: $width
+            height: 35rem
+            transition: background-color 0.5s
+            background-color: rgba(0, 0, 0, 0.9)
+            @include alighCenter
+            flex-direction: column
+            @include textContentFont($light)
+
+            & img
+                height: auto
+                margin-bottom: 1rem
+
+.portfolio_icons
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+
+    & a.portfolio_icon1
+        @include portfolioIcon(40rem, 1)
+
+    & a.portfolio_icon2
+        @include portfolioIcon(30rem, 2)
+
+    & a.portfolio_icon3
+        @include portfolioIcon(40rem, 3)
+
+    & a.portfolio_icon4
+        @include portfolioIcon(30rem, 4)
+
+    & a.portfolio_icon5
+        @include portfolioIcon(30rem, 5)
+
+    & a.portfolio_icon6
+        @include portfolioIcon(40rem, 6)
+
+    & a.portfolio_icon7
+        @include portfolioIcon(30rem, 7)
+        
+    & a.portfolio_icon8
+        @include portfolioIcon(40rem, 8)
+
+
+.portfolio_icon__current
+    display: none
+
+.portfolio-bottom 
+    height: 11rem
+    background-color: $darkGreyColor
+
+
+

@@ -1,0 +1,27 @@
+.slider(id="header")
+    
+    each carouselItem in carouselItems
+        .slider_item(class= "slider_item-" + carouselItem.id)
+
+            .slider_item-content
+
+                h1.white= carouselItem.title
+
+                    span.mark-color= carouselItem.titleActive
+
+                h2= carouselItem.content
+
+                .buttons.buttonFont
+
+                    a.button-dark(href="#")= carouselItem.buttonNameLeft
+
+                    a.button-dark(href="#")= carouselItem.buttonNameRight
+
+
+    .prev &#10094;
+    .next &#10095;
+
+
+
+
+

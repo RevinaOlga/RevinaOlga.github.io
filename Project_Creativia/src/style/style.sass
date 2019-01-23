@@ -1,0 +1,127 @@
+$fontRaleway: 'Raleway', sans-serif
+$fontLato: 'Lato', sans-serif
+$heightMenu: 7rem
+$border-color: #E7E7E7
+$servicBlock: #343434
+$circleLight: #E0E0E0
+$buttonGreyColor: #393939
+$buttonDropDown: #F2F2F2
+$bgDark: #272727
+$colorGrey: #5E5E5E
+$GreyColor: #505050
+$darkGreyColor: #262626
+$lightGreyColor: #A4A4A4
+$light: #ffffff
+$bgHeader: #000000
+$activColor: #FF0036
+$bgSpoilerColor: #F7F7F7
+
+
+html
+    font-size: 10px
+
+
+.boldGrey
+    font-weight: bold
+    color: $GreyColor
+
+.mark-color
+    color: $activColor
+
+.white
+    color: $light
+
+.p-justify
+    text-align: justify
+
+@mixin alighCenter
+    display: flex
+    justify-content: center
+    align-items: center
+
+.center
+    @include alighCenter
+
+
+@mixin linkTitle($color, $transform)
+    font-size: 2rem
+    font-family: $fontRaleway
+    color: $color
+    text-transform: $transform
+
+@mixin textContentFont($color)
+    font-family: $fontLato
+    font-size: 1.6rem
+    color: $color
+    line-height: 1.5
+
+@mixin button
+    display: inline-block
+    width: 17rem
+    height: 5rem
+    color: $light
+    border: none
+    line-height: 5rem
+    
+h1
+    font-family: $fontRaleway
+    text-align: center
+    font-weight: bold
+    font-size: 3rem
+    color: $darkGreyColor
+
+h2
+    font-family: $fontLato
+    text-align: center
+    font-size: 1.6rem
+    margin-top: 4rem
+    line-height: 2.4rem
+    padding: 0 2rem
+    box-sizing: border-box
+
+
+.buttonFont
+    text-transform: uppercase
+    font-family: $fontRaleway
+    font-size: 2rem
+
+
+p
+    font-family: $fontLato
+    font-size: 1.6rem
+    color: $GreyColor
+    line-height: 2.4rem
+
+.main
+    max-width: 140rem
+    margin: 0 auto
+
+
+
+
+
+@import 'component/_hexagon-border.sass'
+
+@import './_main.sass'
+
+@import './_about.sass'
+
+@import './_portfolio.sass'
+
+@import './_feature.sass'
+
+@import './_client.sass'
+
+@import './_team.sass'
+
+@import './_skills.sass'
+
+@import './_services.sass'
+
+@import './_blog.sass'
+
+@import './_follow.sass'
+
+@import './_contact.sass'
+
+@import './_sliderHexagon.sass'

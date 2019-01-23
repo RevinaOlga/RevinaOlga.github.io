@@ -1,0 +1,63 @@
+.blog(id="blog")
+    .center
+        h1.dark 
+            |our 
+            span.mark-color Blog
+    h2.boldGrey
+        |Lorem ipsum dolor sit amet, consectetur 
+        span.mark-color adipiscing elit 
+        |. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
+    .blog_wrap
+
+
+
+        mixin post(id, name, content, href, user, comment, view)
+
+            .blog_block
+
+                .blog_block-image
+
+                    .image-layer
+
+                        img(src="assets/image/blog/post" + id + ".jpg")
+
+                .blog_block-post
+
+                    .post_title= name
+
+                    .post_meta
+
+                        .meta_item
+                            a(href= href).user-icon
+                            .meta_user= user
+
+                        .meta_item
+                            img(src="assets/image/blog/comment.png")
+                            .meta_user= comment
+
+                        .meta_item
+                            img(src="assets/image/blog/view.png")
+                            .meta_user= view
+
+                    .post_content= content
+
+                    a.post_button(href="./blog-post.html" target="_blank") view more
+
+
+
+
+        +post(1, "Lorem ipsum dolor sit amet, consectetur ", "Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque penatibus ...", "./user-info.html", "Admin", 2, 155)
+
+        +post(2, "Donec consectetur arcu eu diam cursus consectetur. ", "Quisque cursus risus id ante fermentum, in auctor quam consectetur. Vestibulum est nisi, tempus ac vehicula sit amet, blandit et sapien. Ut congue dui enim, at viverra nisl tempor a. Donec in enim nec massa lacinia porta. ...", "./user-info.html", "Admin", 2, 205)
+
+
+    .blog_wrap__closed
+
+
+        each post in posts 
+
+            +post(post.id, post.title, post.content, post.href, post.user, post.comment, post.view)
+
+
+    .blog_drop-down 
+        img(src="assets/image/main/left.png")

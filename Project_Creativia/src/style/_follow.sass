@@ -1,0 +1,38 @@
+.hexagon-border
+    @include hexagonBorder(6.8rem, $activColor, 0.1rem, transparent)
+
+.follow
+    padding-bottom: 10rem
+    padding-top: 10rem
+    margin: 0 auto
+    font-size: 3rem
+    max-width: 140rem
+    background-image: url("../assets/image/follow/follow.jpg")
+
+    &_content
+        @include alighCenter
+        color: $light
+        font-size: 1.6rem
+        font-family: $fontLato
+
+        &-item
+            @include alighCenter
+            flex-direction: column
+            margin: 0 5rem
+            padding-top: 5rem
+
+
+            & .item_digit
+                margin-top: 5rem
+
+            & a.hexagon-border:hover
+                @include hexagonBorder(6.8rem, $activColor, 2rem, $activColor)
+                
+
+@media screen and (max-width: 600px)
+
+    .follow_content
+        flex-wrap: wrap
+
+    .follow
+        min-height: 50rem

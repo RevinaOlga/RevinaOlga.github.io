@@ -1,0 +1,54 @@
+.services(id="services")
+    .center
+        h1.white 
+            |our 
+            span.mark-color services
+    h2.white
+        |Lorem ipsum dolor sit amet, consectetur 
+        span.mark-color adipiscing elit 
+        |. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
+
+    .service_wrap
+
+        .service_column
+
+
+            each serviceItem in serviceItemsLeft
+
+                .service-item
+
+                    .item_title
+
+                        .item_title-icon
+
+                            a.icon.service_hexagon(href= serviceItem.href)
+
+                                img(src="assets/image/services/icon" + serviceItem.id + "-dark.png")
+
+
+                        .item_title-name= serviceItem.name
+
+                    .item_content= serviceItem.content
+
+
+
+        .service_column
+
+
+            each serviceItem in serviceItemsRight
+
+                .service-item
+
+                    .item_title
+
+                        .item_title-icon
+
+                            a.icon.service_hexagon(href= serviceItem.href)
+
+                                img(src="assets/image/services/icon" + serviceItem.id + "-dark.png")
+
+
+
+                        .item_title-name= serviceItem.name
+
+                    .item_content= serviceItem.content

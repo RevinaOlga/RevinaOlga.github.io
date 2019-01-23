@@ -1,0 +1,311 @@
+{
+
+    "menuItems": [{
+        "name": "home",
+        "href": "#header"
+    }, 
+    {
+        "name": "about us",
+        "href": "#about"
+    },
+    {
+        "name": "portfolio",
+        "href": "#portfolio"
+    },
+    {
+        "name": "clients",
+        "href": "#clients"
+    },
+    {
+        "name": "team",
+        "href": "#team"
+    },
+    {
+        "name": "services",
+        "href": "#services"
+    },
+    {
+        "name": "blog",
+        "href": "#blog"
+    },
+    {
+        "name": "contact",
+        "href": "#contact"
+    }],
+
+    "slides": [{
+        "link": "./image/main/main-bg.jpg"
+    },
+    {
+        "link": "./image/main/1.jpg"
+    },
+    {
+        "link": "./image/main/2.jpg"
+    }],
+
+    "carouselItems": [{
+        "active": "active",
+        "id": 1,
+        "link": "assets/image/main/main-bg.jpg",
+        "title": "why",
+        "titleActive": " creativia ?",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae",
+        "buttonNameLeft": "features",
+        "buttonNameRight": "free psd"
+    },
+    {
+        "active": "",
+        "id": 2,
+        "link": "assets/image/main/1.jpg",
+        "title": "what is",
+        "titleActive": " creativia ?",
+        "content": "Lorem ipsum dolor sit amet. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae",
+        "buttonNameLeft": "skills",
+        "buttonNameRight": "free psd"
+    },
+    {
+        "active": "",
+        "id": 3,
+        "link": "assets/image/main/2.jpg",
+        "title": "follow",
+        "titleActive": " Creativia",
+        "content": "Lorem ipsum dolor sit amet. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae",
+        "buttonNameLeft": "ui/ux design",
+        "buttonNameRight": "html/css"
+    }],
+
+
+    "spoilers": [{
+        "spoilerTitle": "What is creativia",
+        "spoilerContent": "Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl.  Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl. "
+    }, {
+        "spoilerTitle": "Experiences",
+        "spoilerContent": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum "
+    }, {
+        "spoilerTitle": "Learn more",
+        "spoilerContent": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum"
+    }],
+
+    "aboutBottomIcons": [{
+        "id": 1,
+        "name": "FLAT DESIGN",
+        "content": "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet",
+        "href": "#"
+    }, {
+        "id": 2,
+        "name": "RETINA READY",
+        "content": "Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl. ",
+        "href": "#"
+    }, {
+        "id": 3,
+        "name": "RESPONSIVE",
+        "content": "Cras varius odio a arcu rutrum, nec posuere lacus imperdiet.vivamus sit amet tortor mollis eget.",
+        "href": "#"
+    }, {
+        "id": 4,
+        "name": "CLEAN & USEFUL",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at.",
+        "href": "#"
+    }],
+
+    "portfolioMenuItems":[{
+        "name": "all"
+    }, {
+        "name": "illuctration"
+    }, {
+        "name": "digital art"
+    }, {
+        "name": "web design"
+    }],
+
+    "featureItenNames":[{
+        "name": "unlimited color options"
+    },
+    {
+        "name": "outstanding support"
+    },
+    {
+        "name": "retina ready"
+    }],
+
+    "clients": [{
+        "name": "amr srour",
+        "link": "assets/image/client/client1.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis, nec posuere lacus imperdiet. "
+    },
+    {
+        "name": "sarah doe",
+        "link": "assets/image/client/client2.png",
+        "content": "Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl. Cras varius odio a arcu rutrum, nec posuere lacus imperdiet."
+    },
+    {
+        "name": "johan de",
+        "link": "assets/image/client/client3.png",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum."
+    }],
+
+    "clientRadioButtons": [{
+        "id": 1,
+        "checked": "checked"
+    },
+    {
+        "id": 2
+    },
+    {
+        "id": 3
+    }],
+
+    "clientIconsTop": [{
+        "href": "#",
+        "link": "assets/image/client/icon1.png",
+        "name": "graphicriver"
+    },
+    {
+        "href": "#",
+        "link": "assets/image/client/icon2.png",
+        "name": "videohive"
+    }],
+    "clientIconsBottom": [{
+        "href": "#",
+        "link": "assets/image/client/icon3.png",
+        "name": "photodune"
+    },
+    {
+        "href": "#",
+        "link": "assets/image/client/icon4.png",
+        "name": "codecanyon"
+    }],
+
+    "teamIcons": [{
+        "href": "https://www.facebook.com",
+        "link": "assets/image/team/facebook.png"
+    },
+    {
+        "href": "https://www.twitter.com",
+        "link": "assets/image/team/twitter.png"
+    },
+    {
+        "href": "https://www.plus.google.com",
+        "link": "assets/image/team/g.png"
+    }],
+
+
+    "teamItems": [{
+        "href": "assets/image/team/foto1.jpg",
+        "name": "bruce wayne",
+        "profession": "Webdisigner"
+    },
+    {
+        "href": "assets/image/team/foto2.jpg",
+        "name": "amr srour",
+        "profession": "Webdisigner"
+    },
+    {
+        "href": "assets/image/team/foto3.jpg",
+        "name": "sarah doe",
+        "profession": "Webdisigner"
+    },
+    {
+        "href": "assets/image/team/foto4.jpg",
+        "name": "johan de",
+        "profession": "Webdisigner"
+    }],
+
+    "skillItems": [{
+        "id": 1,
+        "percent": 90,
+        "name": "photoshop",
+        "content": "Donec luctus tortor in placerat faucibus"
+    },
+    {   
+        "id": 2,
+        "percent": 80,
+        "name": "html",
+        "content": "Donec luctus tortor in placerat faucibus"
+    },
+    {   
+        "id": 3,
+        "percent": 70,
+        "name": "php",
+        "content": "Donec luctus tortor in placerat faucibus"
+    },
+    {   
+        "id": 4,
+        "percent": 90,
+        "name": "wordpress",
+        "content": "Donec luctus tortor in placerat faucibus"
+    }],
+
+    "serviceItemsLeft": [{
+        "href": "#",
+        "id": 1,
+        "name": "development",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+    },
+    {
+        "href": "#",
+        "id": 2,
+        "name": "wordpress",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum."
+    },
+    {
+        "href": "#",
+        "id": 3,
+        "name": "ui /ux design",
+        "content": "Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl. Cras varius odio a arcu rutrum, nec posuere lacus imperdietsit amet ferment umporttitor lorem."
+    }],
+
+    "serviceItemsRight": [{
+        "href": "#",
+        "id": 4,
+        "name": "html / css",
+        "content": "Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. Praesent faucibus nisl sit amet nulla sollicitudin."
+    },
+    {
+        "href": "#",
+        "id": 5,
+        "name": "applications",
+        "content": "Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin. Praesent faucibus nisl sit amet nulla sollicitudin."
+    },
+    {
+        "href": "#",
+        "id": 6,
+        "name": "responsive layout",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. "
+    }],
+
+    "posts": [{
+        "id": 3,
+        "title": "Why you should always first ",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. Donec in purus elementum, sagittis magna sit amet ...",
+        "href": "./user-info.html",
+        "user": "Admin",
+        "comment": 2,
+        "view": 255
+    },
+    {
+        "id": 4,
+        "title": "Why you should always first ",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. Donec in purus elementum, sagittis magna sit amet ...",
+        "href": "./user-info.html",
+        "user": "Admin",
+        "comment": 2,
+        "view": 185
+    }],
+
+    "comments": [{
+        "name": "John Leonard",
+        "data": "14 december, 2018",
+        "content": "Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante id. Donec orci arcu, sagittis ut finibus vitae."
+
+    },
+    {
+        "name": "Jody Parker",
+        "data": "15 december, 2018",
+        "content": "Aenean eget varius augue, nec gravida lectus. Pellentesque in imperdiet us, ac efficitur risus. Etiam laoreet dapibus lorem vitae aliquam. Sed elementum ligula, molestie consectetur massa rhoncus at."
+        
+    }],
+
+
+    "currentNavItemId": null
+}

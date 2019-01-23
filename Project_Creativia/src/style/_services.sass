@@ -1,0 +1,65 @@
+.services
+    margin: 0 auto
+    padding: 10rem 2rem
+    box-sizing: border-box
+    max-width: 140rem
+    background-color: $bgDark
+
+.service_hexagon
+    @include hexagonBorder(6rem, $lightGreyColor, 1.5rem, $lightGreyColor)
+
+
+
+.service
+
+    &_wrap
+        display: flex
+        justify-content: center
+        margin-top: 10rem
+
+    &_column
+        display: flex
+        flex-direction: column
+        margin: 0 1.5rem
+
+    &-item
+        display: flex
+        flex-direction: column
+        max-width: 57rem
+        margin: 1.5rem 0
+
+        & .item_content
+            @include textContentFont($lightGreyColor)
+            min-height: 13rem
+            background-color: $servicBlock
+            display: flex
+            align-items: center
+            padding: 2rem 3rem
+            text-align: justify
+            transition: background-color .5s
+
+        & .item_title
+            display: flex
+            align-items: center
+            min-height: 12rem
+            @include linkTitle($darkGreyColor, uppercase)
+
+            &-name
+                color: $light
+                font-size: 2rem
+                text-transform: uppercase
+                margin-left: 3rem
+
+            & a.icon
+                @include alighCenter
+                margin: 0 1rem
+
+            & a.icon:hover
+                @include hexagonBorder(6rem, $activColor, 1.5rem, $activColor)
+
+
+@media screen and (max-width: 900px)
+    .service_wrap
+        flex-wrap: wrap
+
+

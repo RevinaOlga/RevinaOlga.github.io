@@ -1,0 +1,47 @@
+@mixin hexagonBorder($height, $hexagonBorderColor, $borderSize, $backgroundColor)
+
+
+    height: $height
+    width: $height/1.732
+    border-top: $borderSize solid $hexagonBorderColor
+    border-bottom: $borderSize solid $hexagonBorderColor
+    background-color: $backgroundColor
+    transform: rotate(0deg)
+    box-sizing: border-box
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+    &:before
+        content: ""
+        transform: rotate(60deg)
+        position: absolute
+        height: $height
+        width: $height/1.732
+        background-color: transparent
+        border-top: $borderSize solid $hexagonBorderColor
+        border-bottom: $borderSize solid $hexagonBorderColor
+        border-left: none
+        border-right: none
+        top: -$borderSize
+        left: 0
+        box-sizing: border-box
+
+    &:after
+        content: ""
+        transform: rotate(-60deg)
+        position: absolute
+        height: $height
+        width: $height/1.732
+        border-top: $borderSize solid $hexagonBorderColor
+        border-bottom: $borderSize solid $hexagonBorderColor
+        border-left: none
+        border-right: none
+        background-color: transparent
+        top: -$borderSize
+        left: 0
+        box-sizing: border-box
+
+

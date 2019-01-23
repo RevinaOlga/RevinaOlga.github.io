@@ -1,0 +1,48 @@
+extends ./_template.pug
+
+block head
+    
+    link(rel="stylesheet" type="text/css" href="style/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Lato|Raleway:500,700" rel="stylesheet")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+block container
+
+    .main
+
+        include ./_main.pug
+
+        include ./_about.pug
+
+        include ./_portfolio.pug
+
+        include ./_feature.pug
+
+        include ./_client.pug
+        
+        include ./_team.pug
+
+        include ./_skills.pug
+
+        include ./_services.pug
+
+        include ./_blog.pug
+
+        include ./_follow.pug
+
+        include ./_contact.pug
+
+
+
+block script
+
+    script(src="libs/jquery/jquery.js")
+    script(src="js/spoiler.js")
+    script(src="js/slider.js")
+    script(src="js/blog.js")
+    script(src="js/header.js")
+    script(src="js/client.js")
+    script(src="js/services.js")
+    script(src="js/follow.js")
+    script(src="js/portfolio.js")
+    script(src="js/sliderHexagon.js")

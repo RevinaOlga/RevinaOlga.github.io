@@ -1,0 +1,113 @@
+h2.light
+    color: $lightGreyColor
+
+.client
+    background: url("../assets/image/client/bg-client.jpg") rgba($bgHeader, 0.9) no-repeat
+    margin: 0 auto
+    max-width: 140rem
+    min-height: 65rem
+    padding-top: 10rem
+    box-sizing: border-box
+
+    &_block
+        margin: 10rem auto 0 auto
+        max-width: 116rem
+        display: flex
+
+        &-items
+            margin: 0 2rem
+
+        &-item
+            display: none
+            flex-direction: column
+            align-items: center
+            text-align: center
+
+            & .item_name
+                font-size: 1.6rem
+                color: $activColor
+                text-transform: uppercase
+                font-family: $fontRaleway
+                font-weight: bold
+                margin: 1.5rem 0 2rem 0
+
+            & .item_content
+                color: $lightGreyColor
+                margin: 3.5rem 0
+
+            &__active
+                display: flex
+
+
+
+h3.items_title
+    @include linkTitle($light, uppercase)
+    text-align: center
+
+
+
+.client_radio_buttons
+    @include alighCenter
+
+
+.client-radio_button input
+    display: none
+
+.client-radio_button label::after
+    content: ''
+    display: inline-block
+    width: 0.8rem
+    height: 0.8rem
+    margin: 0 0.3rem
+    background-color: $circleLight
+    transition: background-color .3s
+
+.client-radio_button:hover input:not(:checked) ~ label::after
+    background-color: $activColor
+    display: inline-block
+    cursor: pointer
+
+.client-radio_button input:checked ~ label::after
+    background-color: $activColor
+    display: inline-block
+
+
+.client_icons
+    margin: 0 2rem
+
+    &-wrap
+        display: flex
+        justify-content: space-between
+
+.client_icon
+    width: 27rem
+    height: 12rem
+    display: flex
+    align-items: center
+    justify-content: center
+    background: radial-gradient(ellipse, $light 20%, #EDEDED 40%, #777777)
+    margin: 0 1.5rem 3.5rem
+    text-decoration: none
+
+
+    &-title
+        @include linkTitle($darkGreyColor, none)
+
+    &-image
+         margin-right: 1rem
+
+    &:hover
+        background: $light
+        color: $bgHeader
+
+
+
+
+@media screen and (max-width: 900px)
+
+    .client_block
+        flex-direction: column
+
+    .client_icons-wrap
+        margin-top: 5rem
+        justify-content: center

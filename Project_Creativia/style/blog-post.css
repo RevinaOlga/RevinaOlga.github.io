@@ -1,0 +1,101 @@
+.italic {
+  font-style: italic; }
+
+.mark-color {
+  color: #FF0036; }
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #505050;
+  line-height: 1.5;
+  margin: 2rem 0; }
+
+.blog_post-wrap {
+  padding: 10rem 0;
+  background-color: #F6F6F6;
+  width: 100%; }
+
+.blog_post {
+  margin: 0 auto;
+  max-width: 80rem; }
+  .blog_post h1 {
+    text-align: left; }
+  .blog_post-meta {
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: flex;
+    margin: 3rem 0; }
+    .blog_post-meta .meta_item {
+      margin-right: 3rem; }
+      .blog_post-meta .meta_item .comment, .blog_post-meta .meta_item .view {
+        margin-left: .5rem; }
+  .blog_post .blog_post-user {
+    font-size: 1.8rem;
+    font-family: "Lato", sans-serif;
+    margin-top: 4rem; }
+
+.comments {
+  padding: 5rem 0;
+  margin: 0 auto;
+  max-width: 80rem; }
+
+.comment_title {
+  font-size: 3rem; }
+
+.comment_block {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  color: #505050;
+  line-height: 1.5;
+  margin: 2rem 0; }
+  .comment_block-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0; }
+
+.comments_form-wrap {
+  background-color: #F6F6F6;
+  width: 100%; }
+
+.comments_form {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 5rem; }
+  .comments_form form input.login, .comments_form form input.email {
+    width: 30rem;
+    height: 4rem;
+    border: none;
+    margin-right: 2rem;
+    font-size: 2rem;
+    padding: 0 1rem; }
+    .comments_form form input.login:focus, .comments_form form input.email:focus {
+      outline: none; }
+  .comments_form form textarea.comment {
+    width: 62rem;
+    height: 20rem;
+    border: none;
+    margin: 2rem 0;
+    font-size: 2rem;
+    padding: 1rem; }
+    .comments_form form textarea.comment:focus {
+      outline: none; }
+  .comments_form form input.button {
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #000;
+    font-family: "Raleway", sans-serif; }
+    .comments_form form input.button:hover {
+      background-color: #262626;
+      cursor: pointer; }
+
+.comments_form-title {
+  font-size: 3rem;
+  margin: 3rem 0; }

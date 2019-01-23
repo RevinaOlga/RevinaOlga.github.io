@@ -1,0 +1,30 @@
+.main_header
+    .header
+
+        .header_logo
+
+            a.header_logo-link(href="/")
+
+                img(src="assets/image/main/logo.png")
+
+
+
+
+        .header_button
+
+            .button-lines
+
+
+
+
+        ul.header_menu
+
+
+            each menuItem in menuItems
+
+                li.header_menu-item
+
+                    a.item_link(href= menuItem.href)= menuItem.name
+
+                        .line_top
+                        .line_bottom

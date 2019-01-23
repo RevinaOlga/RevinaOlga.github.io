@@ -1,0 +1,119 @@
+.blog
+    margin: 0 auto
+    padding-bottom: 10rem
+    padding-top: 10rem
+    max-width: 100rem
+    box-sizing: border-box
+    padding: 10rem 2rem
+
+    &_wrap
+        margin-top: 10rem
+
+        &__closed
+            height: 0
+            overflow: hidden
+            transition-duration: .5s
+
+        &__opened
+            height: 55rem
+            
+    &_block
+        display: flex
+        justify-content: center
+        margin: 5rem 0
+
+        &-image
+            margin: 0 1.5rem
+            height: 20rem
+            & .image-layer
+                transition-duration: .6s
+
+        &-post
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin: 0 1.5rem
+
+@media screen and (max-width: 800px)
+    .blog_wrap__opened
+        height: 100rem
+
+.post_title
+    font-family: $fontRaleway
+    font-weight: bold
+    font-size: 2rem
+    color: $darkGreyColor
+
+.post_content
+    @include textContentFont($GreyColor)
+    text-align: justify
+
+a.post_button
+    @include alighCenter
+    width: 12rem
+    height: 4rem
+    background-color: $bgHeader
+    font-family: $fontLato
+    text-transform: uppercase
+    font-size: 1.6rem
+    color: $light
+    transition-duration: .3s
+    text-decoration: none
+
+    &:hover
+        background-color: $activColor
+        cursor: pointer
+        
+
+
+.blog_drop-down
+    @include alighCenter
+    width: 4.5rem
+    height: 4.5rem
+    background-color: $buttonDropDown
+    border-radius: 50%
+    font-size: 2rem
+    font-weight: bold
+    transform: rotate(-90deg)
+    margin: 0 auto
+    transition-duration: .5s
+
+    &:hover
+        cursor: pointer
+
+    &__current
+        transform: rotate(90deg)
+
+
+.post_meta
+    display: flex
+
+.meta_item
+    @include alighCenter
+    font-size: 1.2rem
+    margin-right: 2rem
+    font-family: $fontLato
+    font-size: 1.2rem
+    color: $GreyColor
+
+    & a.user-icon
+        display: inline-block
+        background: url("../assets/image/blog/user.png") no-repeat
+        width: 1.5rem
+        height: 1.6rem
+        transition-duration: .3s
+
+        &:hover
+            background: url("../assets/image/blog/user-active.png") no-repeat
+            cursor: pointer
+
+    & .meta_user
+        margin-left: 0.8rem
+
+@media screen and (max-width: 800px)
+
+    .blog_block
+        flex-wrap: wrap
+
+    .blog_block-post
+        margin: 2rem 1.5rem

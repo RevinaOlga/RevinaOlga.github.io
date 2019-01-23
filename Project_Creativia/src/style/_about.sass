@@ -1,0 +1,67 @@
+@import 'component/_spoiler.sass'
+
+.about
+    padding: 10rem 2rem
+    box-sizing: border-box
+    margin: 0 auto
+    max-width: 117rem
+    &_center
+        margin-top: 10rem
+        display: flex
+        justify-content: center
+        &-left
+            display: flex
+            flex-direction: column
+            margin-left: 2rem
+            max-width: 57rem
+
+        &-right
+
+
+
+
+
+.about_spoiler
+    margin-top: 2rem
+
+
+@media screen and (max-width: 992px) 
+    .about_center-right
+        margin-top: 4rem
+
+    .about_center, .about_bottom
+        flex-wrap: wrap
+
+
+.about_bottom
+    display: flex
+    justify-content: center
+
+    &-icon
+        @include alighCenter
+        flex-direction: column
+        text-align: center
+
+        & .icon_name
+            @include linkTitle($darkGreyColor, uppercase)
+            margin-top: 2rem
+            margin-bottom: 1.5rem
+
+@for $i from 1 through 4
+    .about_bottom-icon#{$i}
+        display: inline-block
+        width: 9rem
+        height: 8rem
+        margin-top: 5rem
+        background: url('../assets/image/about/#{$i}.png') no-repeat
+        transition-duration: .3s
+
+        &:hover 
+            transition: background .2s
+            background: url('../assets/image/about/#{$i}-red.png') no-repeat
+            cursor: pointer
+
+
+
+
+
