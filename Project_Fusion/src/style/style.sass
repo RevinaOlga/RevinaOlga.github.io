@@ -1,0 +1,52 @@
+$colorDark: #000000
+$colorLight: #ffffff
+$bgLayer: #232323
+$bgdark: #202020
+$bgblack: #181818
+$bgSlide: #919191
+$borderColor: #8F8F8F
+$colorActive: #F7AC53
+$colorGrey: #BBBBBB
+$colorRadioButton: #5C5C5C
+$bgFoto: #D5D5D5
+$bgfooter: #343434
+$bdBorder: #1F1F1F
+
+html
+    font-size: 10px
+    min-width: 840px
+body
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+    min-width: 840px
+
+.main_bg
+    width: 100%
+
+
+.main_align
+    max-width: 100%
+    margin: 0 auto
+
+@mixin line($height)
+    width: 0.2rem
+    height: $height
+    background-color: $colorActive
+
+@mixin alignCenter
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+@import './_main.sass'
+
+@import './_services.sass'
+
+@import './_portfolio.sass'
+
+@import './_test.sass'
+
+@import './_team.sass'
+
+@import './_contact.sass'

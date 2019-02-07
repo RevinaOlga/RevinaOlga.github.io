@@ -1,0 +1,174 @@
+.contact
+    width: 100%
+    background-color: $bgfooter
+    margin: 0 auto
+    transition-duration: .3s
+    box-sizing: border-box
+    @media screen and (max-width: 810px)
+        padding-bottom: 10rem
+        box-sizing: border-box
+    &_wrap
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &_line
+        width: 0.2rem
+        height: 12.5rem
+        background-color: $colorActive
+        position: absolute
+        top: 0
+        height: 0
+        overflow: hidden
+        
+    &_name
+        color: $colorActive
+        font-size: 1.4rem
+        font-weight: 700
+        text-transform: uppercase
+        position: absolute
+        top: 14.5rem
+        height: 0
+        overflow: hidden
+    &_title
+        color: $colorLight
+        font-size: 4.8rem
+        font-family: "Times New Roman" 
+        max-width: 75rem
+        text-align: center
+        line-height: 1.5
+        position: absolute
+        top: 18rem
+        height: 0
+        overflow: hidden
+    &_center
+        width: 75rem
+        height: 53rem
+        background-color: $bgblack
+        margin-top: 40rem
+        color: $bgFoto
+        position: relative
+        opacity: 0
+        box-shadow: 0px 0px 15px rgba(#000, 0.3), 5px 5px 15px  rgba(#000, 0.3)
+        & .form_item
+            display: inline-block
+            position: relative
+            width: 27rem
+            margin: 7rem 5rem 0 5rem
+            height: 3rem
+            border-bottom: 2px solid #3C3C3C
+            vertical-align: top
+
+            & .line
+                position: absolute
+                display: inline-block
+                width: 0rem
+                height: 0.1rem
+                border: none
+                background-color: $colorActive
+                bottom: -1.2rem
+            & .form_input
+                border: none
+                border-bottom: 2px solid #3C3C3C
+                background-color: $bgblack
+                color: $bgFoto
+                padding-bottom: 1rem
+                width: 100%
+                height: 3rem
+                transition-duration: 0.8s
+                &:focus
+                    outline: none
+                    border-bottom: 2px solid $colorActive
+                &:focus ~ .form_label
+                    top: -2rem
+                    font-size: 1.2rem
+                    color: $colorActive
+                &:focus ~ .line
+                    width: 100%
+                    transition-duration: .5s
+            
+            & .form_label
+                position: absolute
+                left: 0
+                top: 0
+                transition-duration: 0.5s
+                text-transform: uppercase
+                color: $bgFoto
+                font-size: 1.4rem
+                pointer-events: none
+        & .justify
+            width: 64rem
+            margin-top: 10rem
+        & button.button
+            width: 22rem
+            height: 6rem
+            background-color: $colorActive
+            color: $bgblack
+            text-transform: uppercase
+            font-weight: 700
+            font-size: 1.7rem
+            border: none
+            transition-duration: .5s
+            position: absolute
+            bottom: 6rem
+            left: 0
+            right: 0
+            margin: 0 auto
+            & i.fas
+                margin-left: .5rem
+            &:hover
+                cursor: pointer
+                color: lighten($bgblack, 20%)
+
+.form_input:not(:focus):valid ~ .form_label
+    top: -2rem
+    font-size: 1.2rem
+    color: $colorActive
+
+.form_input:not(:focus):valid
+    border-bottom: 2px solid $colorActive
+
+.contact_footer
+    margin: 12rem auto
+    display: flex
+    justify-content: center
+    opacity: 0
+    & .footer_address
+        display: flex
+        flex-direction: column
+        margin-left: 8rem
+        &-title
+            font-size: 1.4rem
+            font-weight: 700
+            text-transform: uppercase
+            color: $colorLight
+        &-content
+            font-size: 1.4rem
+            color: $bgFoto
+            width: 16rem
+            line-height: 2
+            margin-top: 3rem
+        &-logos
+            display: flex
+            margin-top: 3rem
+            & .logo
+                font-size: 1.4rem
+                width: 2.3rem
+                height: 2.3rem
+                border-radius: 50%
+                background-color: $bgFoto
+                color: $bgblack
+                margin: 0 1rem 1rem 0
+                display: flex
+                justify-content: center
+                align-items: center
+                text-decoration: none
+
+    & .footer_logo
+        display: inline-block
+        width: 4.5rem
+        height: 4.5rem
+        background: url('../assets/image/fusion.png') no-repeat
+
+

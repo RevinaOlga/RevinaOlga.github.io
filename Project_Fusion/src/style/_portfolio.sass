@@ -1,0 +1,141 @@
+.portfolio
+    width: 100%
+    max-height: 95rem
+    margin: 0 auto
+    padding: 15rem 0
+    box-sizing: border-box
+    background-color: $bgblack
+    &_wrap
+        max-width: 114rem
+        height: 60rem
+        margin: 0 auto
+        position: relative
+        @media screen and (max-width: 1180px)
+            max-width: 100rem
+            height: 52rem
+        @media screen and (max-width: 1050px)
+            max-width: 80rem
+            height: 52rem
+        @media screen and (max-width: 840px)
+            max-width: 60rem
+            height: 37rem
+    &_top-wrap
+        position: absolute
+        top: 0
+        left: 0
+        & .portfolio_top
+            display: flex
+            flex-direction: column
+            & .portfolio_line
+                @include line(12.5rem)
+                height: 0
+                overflow: hidden
+            & .portfolio_name
+                font-size: 1.4rem
+                font-weight: 700
+                color: $colorActive
+                text-transform: uppercase
+                margin: 1rem 0
+                z-index: 2
+                height: 0
+                overflow: hidden
+            & .portfolio_title
+                font-size: 6.5rem
+                color: $colorLight
+                font-family: "Times New Roman"
+                z-index: 2
+                height: 0
+                overflow: hidden
+    & .portfolio_slider-wrap
+        position: relative
+        margin: 0 auto
+        overflow: hidden
+        transition-duration: .3s
+        max-width: 80rem
+        height: 60rem
+        overflow: hidden
+        @media screen and (max-width: 1180px)
+            max-width: 70rem
+            height: 52rem
+        @media screen and (max-width: 840px)
+            max-width: 50rem
+            height: 37rem
+    & .portfolio_slider
+        position: absolute
+        top: 0
+        left: 0
+        margin: 0
+        display: flex
+        
+        & .slide
+            & img
+                width: 80rem
+                height: 60rem
+                @media screen and (max-width: 1180px)
+                    width: 70rem
+                    height: 52rem
+                @media screen and (max-width: 840px)
+                    width: 50rem
+                    height: 37rem
+        & .portfolio_slide1
+    & .potfolio_bottom-wrap
+        position: absolute
+        bottom: 0
+        right: 0
+        height: 21.5rem
+        @media screen and (max-width: 1180px)
+            margin-bottom: 1.2rem
+        & .potfolio_bottom
+            display: flex
+            flex-direction: column
+            @media screen and (max-width: 1180px)
+                align-items: flex-end
+                margin: 1rem auto 0
+            &-text
+                display: flex
+                font-size: 1.4rem
+                font-weight: 700
+                color: $colorLight
+                text-transform: uppercase
+                margin: 1rem 0
+                height: 0
+                overflow: hidden
+                text-decoration: none
+                &:hover > .text
+                    color: $colorActive
+                & .text
+                    margin-right: 1rem
+                    transition-duration: .5s
+            &-line
+                @include line(12.5rem)
+                transition: all 1s
+                height: 0
+                overflow: hidden
+
+        & .hide
+            display: none
+    & .hide
+        display: none
+    & .portfolio_radio
+        display: flex
+        justify-content: center
+        &-button
+            margin-top: 4.5rem
+            & input
+                display: none
+            & label::before
+                content: ''
+                display: inline-block
+                width: 3rem
+                height: 0.2rem
+                background-color: $colorLight
+                margin: 0 2rem
+                
+
+.portfolio_radio-button:hover input:not(:checked) ~ label::before
+        background-color: $colorActive
+        cursor: pointer
+.portfolio_radio-button input:checked ~ label::before
+        background-color: $colorActive
+
+
