@@ -8,3 +8,5 @@ Portfolio
 [Project Lemon](https://revinaolga.github.io/Project_Lemon/index.html "web site")
 
 [Project Creativia](https://revinaolga.github.io/Project_Creativia/index.html "web site")
+
+[Project Fusion](https://revinaolga.github.io/Project_Fusion/index.html "web site")
