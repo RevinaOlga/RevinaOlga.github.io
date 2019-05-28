@@ -1,0 +1,15 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "browser-sync start -s -f ./"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.0"
+  },
+  "description": "Домашние задание №3\r Сверстать layout.png в index.html. Исходный текст в source-text.txt",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}
