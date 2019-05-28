@@ -14,3 +14,5 @@ Portfolio
 [Project NeurtonMail](https://revinaolga.github.io/Project_NeutronMail/index.html "web site")
 
 [Project Hexal](https://revinaolga.github.io/Project_Hexal_/index.html "web site")
+
+[Project Palette](https://revinaolga.github.io/Project_Palette/index.html "web site")
