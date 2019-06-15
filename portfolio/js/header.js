@@ -1,0 +1,1 @@
+!function(){var e=document.querySelector(".header_button"),t=document.querySelector(".header_nav");e.onclick=function(){t.classList.toggle("header_nav__current")},$(t).on("click","a",function(){var e=$(this).attr("href");$("html").animate({scrollTop:$(e).offset().top},500)})}();
