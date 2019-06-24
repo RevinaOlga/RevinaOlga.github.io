@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Кейтеринг</title>
+    <link rel="stylesheet" type="text/css" href="libs/reset-css/reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fotorama.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:700|Montserrat:300,400,500,700,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <div class="form">
+        <div class="close"></div>
+        <h2 class="form-title">Оставить заявку</h2>
+        <form class="form-container" method="POST" action="https://formspree.io/montreseo@gmail.com">
+          <input type="text" name="name" placeholder="Ваше Имя" class="form-item" required />
+          <input type="text" name="_replyto"  placeholder="Ваш Email" class="form-item" required />
+          <textarea class="form-message" name="body" placeholder="Ваше сообщение"></textarea>
+          <input type="submit" value="Отправить" class="form-button">
+        </form>
+      </div>
+    </div>
+    <header class="header" >
+      <div class="header-top">
+        <a href="#home" class="header-logo">
+          <img src="image/logo.png" alt="logo">
+        </a>
+        <div class="header-top_center">
+          <h1 class="header-title">
+            <span class="header-title_left">Кейтеринг, аренда теплоходов.</span>
+            <span class="header-title_line"></span>
+            <span class="header-title_right">5 лет на рынке.</span>
+          </h1>
+          <div class="header-connection">
+            <a href="tel: +79319866766" class="header-phone">
+              <img src="image/phone.png" alt="phone">
+              <img src="image/whatsapp.png" alt="whatsapp">
+              <span class="header-phone_content">+7 (931) 986-67-66</span>
+            </a>
+            <a href="mailto: furshetbanket@yandex.ru" class="header-mail">
+              <img src="image/email.png" alt="email">
+              <span class="header-mail_content">furshetbanket@yandex.ru</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-top_buttons">
+          <div class="header-top_button">
+            <a class="show-btn link4" href = "#">Оставить заявку</a>
+          </div>
+          <div class="header-top_button">
+            <a class="show-btn link3" href="#">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="header_button"><span></span><span></span><span></span></div>
+        <ul class="header_nav">
+          <li class="nav-item"><a href="#home" class="nav-item_link">главная</a></li>
+          <li class="nav-item"><a href="#popular" class="nav-item_link">каталог суден</a></li>
+          <li class="nav-item"><a href="#service" class="nav-item_link">услуги</a></li>
+          <li class="nav-item"><a href="#advantages" class="nav-item_link">мероприятия</a></li>
+          <li class="nav-item"><a href="#order" class="nav-item_link">маршруты</a></li>
+          <li class="nav-item"><a href="#slider" class="nav-item_link">фотоотчеты</a></li>
+          <li class="nav-item"><a href="#" class="nav-item_link">отзывы</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-item_link">контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="empty" id="home"></div>
+    <section class="category-top" >
+      <div class="category-top_items">
+        <div class="category-top_item">
+          <div class="category-top_text">
+            <div class="category-top_item-name">Моторные яхты</div>
+            <div class="category-top_item-number">от 2 до 30 чел</div>
+          </div>
+        </div>
+        <div class="category-top_item">
+          <div class="category-top_text">
+            <div class="category-top_item-name">Теплоходы</div>
+            <div class="category-top_item-number">от 10 до 250 чел</div>
+          </div>
+        </div>
+        <div class="category-top_item">
+          <div class="category-top_text">
+            <div class="category-top_item-name">Катера</div>
+            <div class="category-top_item-number">от 2 до 12 чел</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider" id="slider">
+        <div class="fotorama" data-nav="thumbs" data-arrows="true" data-loop="true" data-autoplay="3000" data-thumbwidth="164" data-thumbheight="100">
+          <img src="image/slides/1-min.jpg">
+          <img src="image/slides/2-min.jpg">
+          <img src="image/slides/3-min.jpg">
+          <img src="image/slides/4-min.jpg">
+          <img src="image/slides/5-min.jpg">
+          <img src="image/slides/6-min.jpg">
+          <img src="image/slides/7-min.jpg">
+          <img src="image/slides/8-min.jpg">
+          <img src="image/slides/9-min.jpg">
+          <img src="image/slides/10-min.jpg">
+          <img src="image/slides/11-min.jpg">
+          <img src="image/slides/12-min.jpg">
+        </div>
+    </section>
+
+    <section class="popular" id="popular">
+      <div class="popular-wrapper">
+        <h2 class="popular-title">Популярные: <span class="popular-title_span"> теплоходы, катера, моторные яхты</span></h2>
+        <div class="popular-items">
+          <div class="popular-item">
+            <div class="popular-item_image popular1">
+              <div class="popular-item_speed">6500р/час</div>
+            </div>
+            <div class="popular-item_wrapper">
+              <div class="popular-item_text">
+                <span class="popular-text">Тип: Однопалубные теплоходы</span>
+                <span class="popular-text">Гостей: до 35</span>
+                <span class="popular-text">Банкет: до 28</span>
+                <span class="popular-text">Фуршет: до 32</span>
+              </div>
+              <div class="popular-item_icons">
+                  <span class="popular-icons">
+                    <img src="image/wc.png" alt="wc">
+                    <img src="image/chec.png" alt="chec">
+                  </span>
+                  <span class="popular-icons">
+                    <img src="image/music.png" alt="music">
+                    <img src="image/chec.png" alt="chec">
+                  </span>
+                  <span class="popular-icons">
+                    <img src="image/tv.png" alt="tv">
+                    <img src="image/chec.png" alt="chec">
+                  </span>
+              </div>
+            </div>
+          </div>
+          <div class="popular-item">
+            <div class="popular-item_image popular2">
+              <div class="popular-item_speed">5500р/час</div>
+            </div>
+            <div class="popular-item_wrapper">
+              <div class="popular-item_text">
+                <span class="popular-text">Тип: Катера</span>
+                <span class="popular-text">Гостей: до 8</span>
+              </div>
+              <div class="popular-item_icons">
+                  <span class="popular-icons">
+                    <img src="image/home.png" alt="home">
+                    <img src="image/chec.png" alt="chec">
+                  </span>
+                  <span class="popular-icons">
+                    <img src="image/music.png" alt="music">
+                    <img src="image/chec.png" alt="chec">
+                  </span>
+                  <span class="popular-icons">
+                    <img src="image/table.png" alt="tv">
+                    <img src="image/chec.png" alt="chec">
+                  </span>
+                  <span class="popular-icons">
+                    <img src="image/plaid.png" alt="tv">
+                    <img src="image/chec.png" alt="chec">
+                  </span>
+              </div>
+            </div>
+          </div>
+          <div class="popular-item">
+            <div class="popular-item_image popular3">
+              <div class="popular-item_speed">35 500р/час</div>
+            </div>
+            <div class="popular-item_wrapper">
+              <div class="popular-item_text">
+                <span class="popular-text">Тип: Моторные яхты</span>
+                <span class="popular-text">Гостей: до 12</span>
+              </div>
+              <div class="popular-item_icons">
+                  <span class="popular-icons">
+                    <img src="image/vector.png" alt="cheс">
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="service-wrapper">
+        <h2 class="service-title">Дополнительные услуги</h2>
+        <div class="service-items">
+
+          <div class="service-item">
+            <div class="service-item_icon">
+              <img src="image/service1.png" alt="icon">
+            </div>
+            <div class="service-item_text">
+              Аренда теплохода для банкета в окружении достопримечательностей. Экскурсовод, влюбленный в город
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item_icon">
+              <img src="image/service2.png" alt="icon">
+            </div>
+            <div class="service-item_text">
+              Пригласим музыкантов или подготовим  плейлист на ваш вкус  
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item_icon">
+              <img src="image/service3.png" alt="icon">
+            </div>
+            <div class="service-item_text">
+              Оформим локацию  цветочными композициями и шарами  
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item_icon">
+              <img src="image/service4.png" alt="icon">
+            </div>
+            <div class="service-item_text">
+              Крутой бармен смешает классические и нестандартные коктейли  
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item_icon">
+              <img src="image/service5.png" alt="icon">
+            </div>
+            <div class="service-item_text">
+              Обеспечим хорошую погоду (шатры, зонты, навесы)
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item_icon">
+              <img src="image/service6.png" alt="icon">
+            </div>
+            <div class="service-item_text">
+              Шоу-программы, диджеи, ведущий любого формата под ваш бюджет
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item_icon">
+              <img src="image/service7.png" alt="icon">
+            </div>
+            <div class="service-item_text">
+              Пригласим мастеров фото- и видеосъемки
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item_icon">
+              <img src="image/service8.png" alt="icon">
+            </div>
+            <div class="service-item_text">
+              Организуем спецэффекты, фейерверки, салюты.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="request">
+      <div class="request-wrapper">
+        <div class="request-left">
+          <p class="request-content">Хотите организовать фуршет в необычном месте или заказать барбекю в корпоративном стиле?</p>
+          <p class="request-content"> Арендовать теплоход для банкета в окружении архитектурных «декораций»  СПб?</p>
+        </div>
+        <span class="request-line"></span>
+        <div class="request-right">
+          <p class="request-content">Оставьте <a href="#" class="request-link link2">заявку на сайте</a> или свяжитесь с нами по телефону: <a href="tel: +79319866766" class="request-phone"><img src="image/tel.png" alt="tel"> +7 (931) 986-67-66 </a></p>
+          <p class="request-content">Мы все обсудим, ответим на вопросы и непременно подберем что-то для Вас.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="advantages" id="advantages">
+      <div class="advantages-wrapper">
+        <h3>Мы знаем два важных секрета успешного праздника или корпоратива:
+          </h3>
+
+        <span class="advantages-line"></span>
+        <span class="advantages-line1"></span>
+        <ol>
+          <li>Сытые гости</li>
+          <li>Когда кто-то решает все проблемы за вас</li>
+        </ol>
+        <p class="advantages-text">Компания «ФуршетБанкет» уже шестой год вкусно и недорого кормит и помогает принять ваших гостей в любом месте СПб и Ленобласти. Заботится о том, чтобы ваши праздники, презентации и приемы проходили как по маслу и оставляли только приятное послевкусие.
+            В прямом и переносном смысле.
+            Мы обслужили и организовали уже несколько сотен мероприятий и отработали на практике все самые востребованные форматы выездного ресторанного обслуживания.
+            </p>
+        <h3>Закажите услуги кейтеринга в «ФуршетБанкет» и расслабляйтесь вместе с гостями или сотрудниками</h3>
+        <span class="advantages-line"></span>
+        <h5>Банкеты  любого масштаба</h5>
+        <ul class="advantages-marker">
+          <li>Торжественный прием</li>
+          <li>Свадьба</li>
+          <li>День рождения, юбилей</li>
+        </ul>
+        <p class="advantages-text">Подготовим торжественное мероприятие с высокими требованиями к сервировке и обслуживанию.
+            Для сервировки используется дорогой столовый текстиль, стеклянные бокалы, фарфоровая или керамическая посуда, полный комплект столовых приборов.
+            Мы предлагаем 4 вида банкетов по цене от 1700 р/ чел. до 4200 р/ чел. Любой из сетов хорошо сбалансирован и включает не меньше 4-х вариантов салатов, 2-х горячих блюд, холодные закуски.
+            Не подходят сеты — организуем банкет «а-ля-карт» (по меню).
+            </p>
+        <h5>Фуршет или кофе-брейк любой продолжительности
+          </h5>
+        <ul class="advantages-circle">
+          <li>Презентации, премьеры, открытия разной степени официоза</li>
+          <li>Значимые события в жизни компании</li>
+          <li>Торжественные мероприятия в стенах офиса </li>
+          <li>Выездные и неформальные дни рождения, выпускные, детские праздники</li>
+        </ul>
+        <p class="advantages-text">Легкая и непринужденная атмосфера, удобная выкладка блюд вдоль фуршетной линии. Гости свободно подходят и берут на тарелку любые угощения. Специальные порционные блюда не пачкают руки.
+            Наш шеф-повар разработал 4 вида фуршетов: от демократичного, по цене 1100 р/чел. до изысканного, за 2250 р/чел.
+            </p>
+        <div class="advantages-text_active-wrapper">
+          <p class="advantages-text_active">Специальное предложение для выездных (мобильных) банкетов и фуршетов: доставка и сервировка выбранного сета с использованием одноразовой посуды, салфеток и скатертей, без дополнительного обслуживания.</p>
+          <span class="advantages-line"></span>
+        </div>
+        <h5> С удовольствием организуем банкет или фуршет на теплоходе или яхте.</h5>
+        <p class="advantages-text">Изысканная кухня от шеф-повара с большим опытом работы в ресторанах Ginza-project, фоновая музыка, расслабляющая атмосфера отдыха на воде в окружении городских пейзажей и достопримечательностей нашего города сделает событие незабываемым.
+           </p>
+        <p class="advantages-text advantages-text_align"> Мы подготовили выгодные предложения по аренде теплоходов и катеров без посредников. Но будьте готовы к тому, что к времени аренды (не менее 1 часа) будут добавлены 30 минут на сервировку и 30 минут на уборку.
+        </p>
+      
+        <h5>Наше кредо: вкусная еда и великолепное обслуживание в любом месте и по любому поводу</h5>
+        <p class="advantages-text">Организуем банкет или фуршет на вашей площадке или подберем удобное место: от скромной студии до роскошной загородной виллы.
+            </p>
+        <p class="advantages-text advantages-text_align">Звоните, даже если до мероприятия осталось всего 2-3 дня. Мы успеем!</p>
+      </div>
+    </section>
+
+    <section class="youtube">
+      <div class="youtube-wrapper">
+        <h2 class="youtube-title">Мы на YouTube</h2>
+        <div class="youtube-item">
+          <iframe width="820" height="460" src="https://www.youtube.com/embed/onzl3VZMUeE?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="best-service">
+      <div class="best-service_wrapper">
+        <h2 class="best-service_title">5-ти звездочный фуд-сервис для вашего мероприятия от «ФуршетБанкет»”</h2>
+        <div class="best-service_items">
+
+          <div class="best-service_item">
+            <div class="best-service_item-wrapper">
+              <img src="image/best1.png" alt="icon">
+            </div>
+            <div class="best-service_item-content">
+              <p class="best-service_item-title">Для вас готовит шеф - повар из Ginza-project</p>
+              <p class="best-service_item-text">Авторские блюда с креативной подачей.</p>
+              <p class="best-service_item-text">Гурманы остаются довольны и рекомендуют друзьям</p>
+            </div>
+          </div>
+
+          <div class="best-service_item">
+            <div class="best-service_item-wrapper">
+              <img src="image/best2.png" alt="icon">
+            </div>
+            <div class="best-service_item-content">
+              <p class="best-service_item-title">Умеем «Не как у всех»</p>
+              <p class="best-service_item-text">Разработаем небанальное меню с непременным учетом ваших пожеланий.</p>
+              <p class="best-service_item-text">Оригинальные локации, уникальные форматы</p>
+            </div>
+          </div>
+          
+          <div class="best-service_item">
+            <div class="best-service_item-wrapper">
+              <img src="image/best3.png" alt="icon">
+            </div>
+            <div class="best-service_item-content">
+              <p class="best-service_item-title">У нас все включено</p>
+              <p class="best-service_item-text">Посуда, бокалы, скатерти, декор, специальное оборудование.</p>
+              <p class="best-service_item-text"> Цены без подводных камней и неожиданных накруток </p>
+            </div>
+          </div>
+          <div class="best-service_item">
+            <div class="best-service_item-wrapper">
+              <img src="image/best4.png" alt="icon">
+            </div>
+            <div class="best-service_item-content">
+              <p class="best-service_item-title">Все клиенты для нас - VIP</p>
+              <p class="best-service_item-text">Pаботаем с компаниями любого уровня.</p>
+              <p class="best-service_item-text">Обслуживаем частные мероприятия, детские и взрослые праздники всех форматов.</p>
+            </div>
+          </div>
+          
+          <div class="best-service_item">
+            <div class="best-service_item-wrapper">
+              <img src="image/best5.png" alt="icon">
+            </div>
+            <div class="best-service_item-content">
+              <p class="best-service_item-title">Вас обслуживают профи</p>
+              <p class="best-service_item-text">Спокойные официанты </p>
+              <p class="best-service_item-text">Общительные бармены </p>
+              <p class="best-service_item-text">Организаторы и менеджеры – победители и призеры в категории «перфекционист года» - держат под контролем все</p>
+            </div>
+          </div>
+          <div class="best-service_item">
+            <div class="best-service_item-wrapper">
+              <img src="image/best6.png" alt="icon">
+            </div>
+            <div class="best-service_item-content">
+              <p class="best-service_item-title">Банкет на воде в окружении дворцов</p>
+              <p class="best-service_item-text">Арендуйте теплоход без посредников. </p>
+              <p class="best-service_item-text">Проведем ваш банкет или фуршет прямо на воде (до 30 человек)</p>
+            </div>
+          </div>
+          
+          <div class="best-service_item">
+            <div class="best-service_item-wrapper">
+              <img src="image/best7.png" alt="icon">
+            </div>
+            <div class="best-service_item-content">
+              <p class="best-service_item-title">Без пробкового сбора</p>
+              <p class="best-service_item-text">Привозите любой алкоголь в любых количествах.</p>
+              <p class="best-service_item-text">Что нужно – охладим или смешаем. Подготовим лед и правильные бокалы</p>
+            </div>
+          </div>
+  
+          <div class="best-service_item">
+            <div class="best-service_item-wrapper">
+              <img src="image/best8.png" alt="icon">
+            </div>
+            <div class="best-service_item-content">
+              <p class="best-service_item-title">Заберите еду домой</p>
+              <p class="best-service_item-text"> Упакуем Оставшиеся блюда в специальные боксы.</p>
+              <p class="best-service_item-text">Бесплатно.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="order-wrapper">
+        <h2 class="order-title">Как сделать заказ на ресторанное обслуживание и снять с себя заботы об организации питания и сервировке</h2>
+        <p class="order-subtitle">Просто. Понятно. По шагам</p>
+        <div class="order-items">
+
+          <div class="order-item">
+            <div class="order-item_number">1</div>
+            <div class="order-item_image">
+              <img src="image/image1.png" alt="icon">
+            </div>
+            <p class="order-item_text">Рассказываете о:
+                формате мероприятия,
+                количестве человек, месте проведения
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">2</div>
+            <div class="order-item_image">
+              <img src="image/image2.png" alt="icon">
+            </div>
+            <p class="order-item_text">Уточняем детали. Обсуждаем меню локацию Записываем особые пожелания Подбираем доп. услуги
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">3</div>
+            <div class="order-item_image">
+              <img src="image/image3.png" alt="icon">
+            </div>
+            <p class="order-item_text">Заключаем договор.  
+                Получаем предоплату
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">4</div>
+            <div class="order-item_image">
+              <img src="image/image4.png" alt="icon">
+            </div>
+            <p class="order-item_text">Бронируем локацию, готовим теплоход.
+                Договариваемся о хорошей погоде 
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">5</div>
+            <div class="order-item_image">
+              <img src="image/image5.png" alt="icon">
+            </div>
+            <p class="order-item_text">Вы отдыхаете в день Х без забот и тревоги о приеме гостей.
+                Закрываем все форс-мажоры.
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">6</div>
+            <div class="order-item_image">
+              <img src="image/image6.png" alt="icon">
+            </div>
+            <p class="order-item_text">Проводим окончательный расчет.
+                Убираем площадку и увозим мусор
+                </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="request">
+      <div class="request-wrapper">
+        <div class="request-left">
+          <p class="request-content">Хотите организовать фуршет в необычном месте или заказать барбекю в корпоративном стиле?</p>
+          <p class="request-content"> Арендовать теплоход для банкета в окружении архитектурных «декораций»  СПб?</p>
+        </div>
+        <span class="request-line"></span>
+        <div class="request-right">
+          <p class="request-content">Оставьте <a href="#" class="request-link link1">заявку на сайте</a> или свяжитесь с нами по телефону: <a href="tel: +79319866766" class="request-phone"><img src="image/tel.png" alt="tel"> +7 (931) 986-67-66 </a></p>
+          <p class="request-content">Мы все обсудим, ответим на вопросы и непременно подберем что-то для Вас.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer-wrapper">
+        <div class="footer-item_left">
+          <span>2019</span>
+          <img src="image/icon.png" alt="icon">
+        </div>
+        <div class="footer-item-center">
+          <p class="footer-item_copyright">
+            Все права защищены. Информация сайта защищена законом об авторских правах
+          </p>
+        </div>
+        <div class="footer-item_right">
+          <a href="mailto: katerkiev@gmail.com" class="footer-item_email"> katerkiev@gmail.com</a>
+          <a href="tel: +443325477" class="footer-item_tel"><img src="image/tel-footer.png" alt="tel"> (44) 332-54-77</a>
+        </div>
+      </div>
+    </footer>
+    <script src="libs/jquery/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="libs/fotorama/fotorama.css">
+    <script src="libs/fotorama/fotorama.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
