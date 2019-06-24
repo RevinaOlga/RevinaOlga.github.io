@@ -6,13 +6,12 @@
     <link rel="stylesheet" type="text/css" href="libs/reset-css/reset.css">
     <link rel="stylesheet" type="text/css" href="modal-contact-form.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant:700|Montserrat:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:700|Montserrat:300,400,500,700,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header class="header">
+    <header class="header" >
       <div class="header-top">
         <div class="header-logo">
           <img src="image/logo.png" alt="logo">
@@ -24,12 +23,12 @@
             <span class="header-title_right">5 лет на рынке.</span>
           </h1>
           <div class="header-connection">
-            <a href="#" class="header-phone">
+            <a href="tel: +79319866766" class="header-phone">
               <img src="image/phone.png" alt="phone">
               <img src="image/whatsapp.png" alt="whatsapp">
               <span class="header-phone_content">+7 (931) 986-67-66</span>
             </a>
-            <a href="#" class="header-mail">
+            <a href="mailto: furshetbanket@yandex.ru" class="header-mail">
               <img src="image/email.png" alt="email">
               <span class="header-mail_content">furshetbanket@yandex.ru</span>
             </a>
@@ -58,18 +57,19 @@
       <nav class="nav">
         <div class="header_button"><span></span><span></span><span></span></div>
         <ul class="header_nav">
-          <li class="nav-item"><a href="#" class="nav-item_link">главная</a></li>
-          <li class="nav-item"><a href="#" class="nav-item_link">каталог суден</a></li>
-          <li class="nav-item"><a href="#" class="nav-item_link">услуги</a></li>
-          <li class="nav-item"><a href="#" class="nav-item_link">мероприятия</a></li>
-          <li class="nav-item"><a href="#" class="nav-item_link">маршруты</a></li>
-          <li class="nav-item"><a href="#" class="nav-item_link">фотоотчеты</a></li>
+          <li class="nav-item"><a href="#home" class="nav-item_link">главная</a></li>
+          <li class="nav-item"><a href="#popular" class="nav-item_link">каталог суден</a></li>
+          <li class="nav-item"><a href="#service" class="nav-item_link">услуги</a></li>
+          <li class="nav-item"><a href="#advantages" class="nav-item_link">мероприятия</a></li>
+          <li class="nav-item"><a href="#order" class="nav-item_link">маршруты</a></li>
+          <li class="nav-item"><a href="#slider" class="nav-item_link">фотоотчеты</a></li>
           <li class="nav-item"><a href="#" class="nav-item_link">отзывы</a></li>
-          <li class="nav-item"><a href="#" class="nav-item_link">контакты</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-item_link">контакты</a></li>
         </ul>
       </nav>
     </header>
-    <section class="category-top">
+    <div class="empty" id="home"></div>
+    <section class="category-top" >
       <div class="category-top_items">
         <div class="category-top_item">
           <div class="category-top_text">
@@ -91,7 +91,7 @@
         </div>
       </div>
     </section>
-    <section class="slider">
+    <section class="slider" id="slider">
         <div class="fotorama" data-nav="thumbs" data-loop="true" data-autoplay="3000" data-thumbwidth="164" data-thumbheight="100">
           <img src="image/slides/1-min.jpg">
           <img src="image/slides/2-min.jpg">
@@ -108,7 +108,7 @@
         </div>
     </section>
 
-    <section class="popular">
+    <section class="popular" id="popular">
       <div class="popular-wrapper">
         <h2 class="popular-title">Популярные: <span class="popular-title_span"> теплоходы, катера, моторные яхты</span></h2>
         <div class="popular-items">
@@ -188,7 +188,7 @@
       </div>
     </section>
 
-    <section class="service">
+    <section class="service" id="service">
       <div class="service-wrapper">
         <h2 class="service-title">Дополнительные услуги</h2>
         <div class="service-items">
@@ -275,14 +275,14 @@
         </div>
         <span class="request-line"></span>
         <div class="request-right">
-          <p class="request-content">Оставьте <a href="#" class="request-link">заявку на сайте</a> или свяжитесь с нами по телефону: <a href="#" class="request-phone"><img src="image/tel.png" alt="tel"> +7 (931) 986-67-66 </a></p>
+          <p class="request-content">Оставьте <a href="#" class="request-link">заявку на сайте</a> или свяжитесь с нами по телефону: <a href="tel: +79319866766" class="request-phone"><img src="image/tel.png" alt="tel"> +7 (931) 986-67-66 </a></p>
           <p class="request-content">Мы все обсудим, ответим на вопросы и непременно подберем что-то для Вас.</p>
         </div>
       </div>
     </section>
 
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="advantages-wrapper">
         <h3>Мы знаем два важных секрета успешного праздника или корпоратива:
           </h3>
@@ -336,6 +336,16 @@
             </p>
         <p class="advantages-text advantages-text_align">Звоните, даже если до мероприятия осталось всего 2-3 дня. Мы успеем!</p>
       </div>
+    </section>
+
+    <section class="youtube">
+      <div class="youtube-wrapper">
+        <h2 class="youtube-title">Мы на YouTube</h2>
+        <div class="youtube-item">
+          <iframe width="820" height="460" src="https://www.youtube.com/embed/onzl3VZMUeE?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
     </section>
 
 
@@ -421,19 +431,93 @@
           </div>
   
           <div class="best-service_item">
-              <div class="best-service_item-wrapper">
-                <img src="image/best8.png" alt="icon">
-              </div>
-              <div class="best-service_item-content">
-                <p class="best-service_item-title">Заберите еду домой</p>
-                <p class="best-service_item-text"> Упакуем Оставшиеся блюда в специальные боксы.</p>
-                <p class="best-service_item-text">Бесплатно.</p>
-              </div>
+            <div class="best-service_item-wrapper">
+              <img src="image/best8.png" alt="icon">
             </div>
+            <div class="best-service_item-content">
+              <p class="best-service_item-title">Заберите еду домой</p>
+              <p class="best-service_item-text"> Упакуем Оставшиеся блюда в специальные боксы.</p>
+              <p class="best-service_item-text">Бесплатно.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     
+
+    
+
+    <section class="order" id="order">
+      <div class="order-wrapper">
+        <h2 class="order-title">Как сделать заказ на ресторанное обслуживание и снять с себя заботы об организации питания и сервировке</h2>
+        <p class="order-subtitle">Просто. Понятно. По шагам</p>
+        <div class="order-items">
+
+          <div class="order-item">
+            <div class="order-item_number">1</div>
+            <div class="order-item_image">
+              <img src="image/image1.png" alt="icon">
+            </div>
+            <p class="order-item_text">Рассказываете о:
+                формате мероприятия,
+                количестве человек, месте проведения
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">2</div>
+            <div class="order-item_image">
+              <img src="image/image2.png" alt="icon">
+            </div>
+            <p class="order-item_text">Уточняем детали. Обсуждаем меню локацию Записываем особые пожелания Подбираем доп. услуги
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">3</div>
+            <div class="order-item_image">
+              <img src="image/image3.png" alt="icon">
+            </div>
+            <p class="order-item_text">Заключаем договор.  
+                Получаем предоплату
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">4</div>
+            <div class="order-item_image">
+              <img src="image/image4.png" alt="icon">
+            </div>
+            <p class="order-item_text">Бронируем локацию, готовим теплоход.
+                Договариваемся о хорошей погоде 
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">5</div>
+            <div class="order-item_image">
+              <img src="image/image5.png" alt="icon">
+            </div>
+            <p class="order-item_text">Вы отдыхаете в день Х без забот и тревоги о приеме гостей.
+                Закрываем все форс-мажоры.
+                </p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item_number">6</div>
+            <div class="order-item_image">
+              <img src="image/image6.png" alt="icon">
+            </div>
+            <p class="order-item_text">Проводим окончательный расчет.
+                Убираем площадку и увозим мусор
+                </p>
+          </div>
+  
+  
+
+        </div>
+      </div>
+    </section>
 
     <section class="request">
       <div class="request-wrapper">
@@ -443,13 +527,13 @@
         </div>
         <span class="request-line"></span>
         <div class="request-right">
-          <p class="request-content">Оставьте <a href="#" class="request-link">заявку на сайте</a> или свяжитесь с нами по телефону: <a href="#" class="request-phone"><img src="image/tel.png" alt="tel"> +7 (931) 986-67-66 </a></p>
+          <p class="request-content">Оставьте <a href="#" class="request-link">заявку на сайте</a> или свяжитесь с нами по телефону: <a href="tel: +79319866766" class="request-phone"><img src="image/tel.png" alt="tel"> +7 (931) 986-67-66 </a></p>
           <p class="request-content">Мы все обсудим, ответим на вопросы и непременно подберем что-то для Вас.</p>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer-wrapper">
         <div class="footer-item_left">
           <span>2019</span>
@@ -461,19 +545,15 @@
           </p>
         </div>
         <div class="footer-item_right">
-          <a href="#" class="footer-item_email"> katerkiev@gmail.com</a>
-          <a href="#" class="footer-item_tel"><img src="image/tel-footer.png" alt="tel"> (44) 332-54-77</a>
+          <a href="mailto: katerkiev@gmail.com" class="footer-item_email"> katerkiev@gmail.com</a>
+          <a href="tel: +443325477" class="footer-item_tel"><img src="image/tel-footer.png" alt="tel"> (44) 332-54-77</a>
         </div>
       </div>
     </footer>
 
     <script src="libs/jquery/jquery.js"></script>
-    <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> -->
     <link rel="stylesheet" type="text/css" href="fotorama.css">
     <script src="fotorama.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
-
-<div class=""></div>

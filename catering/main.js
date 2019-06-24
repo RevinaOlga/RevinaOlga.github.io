@@ -14,8 +14,8 @@
   };
 
 
-  // $(headerNav).on("click","a", function () {
-  //     var id = $(this).attr('href')
-  //     $('html').animate({scrollTop: $(id).offset().top}, 500);
-  // });
+  $(headerNav).on("click","a", function () {
+      var id = $(this).attr('href')
+      $('html').animate({scrollTop: $(id).offset().top}, 500);
+  });
 })();
