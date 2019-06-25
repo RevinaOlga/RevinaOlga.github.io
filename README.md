@@ -18,3 +18,5 @@
 [Project Palette](https://revinaolga.github.io/Project_Palette/index.html "web site")
 
 [Project catering](https://revinaolga.github.io/project_catering/index.html "web site")
+
+[Carousel](https://revinaolga.github.io/slide/index.html "web site")
