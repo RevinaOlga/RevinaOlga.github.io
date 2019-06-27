@@ -58,7 +58,7 @@ $(document).on('submit', '#contact-form', function(e) {
       body_text = body.val();
 
   $.ajax({
-      url: "https://formspree.io/montreseo@gmail.com",
+      url: "https://formspree.io/kolesnik@gmail.com ",
       method: "POST",
       data: {
           _replyto: replyto_text,
