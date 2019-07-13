@@ -21,4 +21,4 @@
 
 [Carousel](https://revinaolga.github.io/slide/index.html "web site")
 
-[bankbooking](https://revinaolga.github.io/slide/index.html "web site")
+[bankbooking](https://revinaolga.github.io/bankbooking/error.html "web site")
