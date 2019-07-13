@@ -23,8 +23,8 @@
 
 [bankbooking-error](https://revinaolga.github.io/bankbooking/error.html "web site")
 
-[bankbooking-liquid](https://revinaolga.github.io/bankbooking/error.html "web site")
+[bankbooking-liquid](https://revinaolga.github.io/bankbooking/liquidation.html "web site")
 
-[bankbooking-registr](https://revinaolga.github.io/bankbooking/error.html "web site")
+[bankbooking-registr](https://revinaolga.github.io/bankbooking/registration.html "web site")
 
-[bankbooking-registrRF](https://revinaolga.github.io/bankbooking/error.html "web site")
+[bankbooking-registrRF](https://revinaolga.github.io/bankbooking/registrationRF.html "web site")
