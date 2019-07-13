@@ -21,4 +21,10 @@
 
 [Carousel](https://revinaolga.github.io/slide/index.html "web site")
 
-[bankbooking](https://revinaolga.github.io/bankbooking/error.html "web site")
+[bankbooking-error](https://revinaolga.github.io/bankbooking/error.html "web site")
+
+[bankbooking-liquid](https://revinaolga.github.io/bankbooking/error.html "web site")
+
+[bankbooking-registr](https://revinaolga.github.io/bankbooking/error.html "web site")
+
+[bankbooking-registrRF](https://revinaolga.github.io/bankbooking/error.html "web site")
