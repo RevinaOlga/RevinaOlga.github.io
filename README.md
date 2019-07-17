@@ -30,3 +30,5 @@
 [bankbooking-registrRF](https://revinaolga.github.io/bankbooking/registrationRF.html "web site")
 
 [bankbooking](https://revinaolga.github.io/bankbooking/index.html "web site")
+
+[email](https://revinaolga.github.io/email.html "web site")
