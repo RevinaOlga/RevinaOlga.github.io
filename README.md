@@ -32,3 +32,5 @@
 [bankbooking](https://revinaolga.github.io/bankbooking/index.html "web site")
 
 [email](https://revinaolga.github.io/email.html "web site")
+
+[easy](https://revinaolga.github.io/easy/index.html "web site")
