@@ -36,3 +36,5 @@
 [easy](https://revinaolga.github.io/easy/index.html "web site")
 
 [test](https://revinaolga.github.io/test/index.html "web site")
+
+[Privacy Policy](https://revinaolga.github.io/privacyPolicy.html "web site")
