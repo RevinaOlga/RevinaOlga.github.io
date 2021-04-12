@@ -40,3 +40,6 @@
 [Privacy Policy](https://revinaolga.github.io/privacyPolicy.html "web site")
 
 [Privacy Policy vca](https://revinaolga.github.io/Privacy_Policy.html "web site")
+
+[Privacy Policy MagicBall](https://revinaolga.github.io/privacy.html "web site")
+
