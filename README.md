@@ -43,3 +43,7 @@
 
 [Privacy Policy MagicBall](https://revinaolga.github.io/privacy.html "web site")
 
+[Privacy Policy WorkHoursRecording](https://revinaolga.github.io/privatePolicityWorkHours.html "web site")
+
+
+
