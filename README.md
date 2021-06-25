@@ -45,5 +45,7 @@
 
 [Privacy Policy WorkHoursRecording](https://revinaolga.github.io/privatePolicityWorkHours.html "web site")
 
+[Privacy Policy SoundR](https://revinaolga.github.io/PrivacyPolicySound.html "web site")
+
 
 
