@@ -47,5 +47,7 @@
 
 [Privacy Policy SoundR](https://revinaolga.github.io/PrivacyPolicySound.html "web site")
 
+[Privacy Policy FastReaction](https://revinaolga.github.io/privacyPolicyReaction.html "web site")
+
 
 
